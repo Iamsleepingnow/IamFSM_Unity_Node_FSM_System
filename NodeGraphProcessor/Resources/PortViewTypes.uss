@@ -1,0 +1,57 @@
+/* 端口颜色样式（PortViewTypes.uss）
+   说明：端口样式类名由端口类型的 Type.Name 生成。
+   注意：C# float 的 Type.Name == "Single"，因此【所有 float 端口（含 float 参数端口、
+   普通 float 节点端口）实际命中的都是 .Port_Single】。修改 float 端口颜色请改 .Port_Single。
+   .Port_Float 永不命中（无任何类型 Name=="Float"），已删除以免误导。 */
+
+.Port_Single {
+	--port-color: #325dff;
+}
+
+.Port_Int32 {
+    --port-color: #325dff;
+}
+
+.Port_String {
+    --port-color: #85f385;
+}
+
+.Port_Vector2 {
+	--port-color: #2070FF;
+}
+
+.Port_Vector3 {
+	--port-color: #2060FF;
+}
+
+.Port_Vector4 {
+	--port-color: #8f20ff;
+}
+
+.Port_Object {
+	--port-color: #d6d6d6;
+}
+
+.Port_Color {
+	--port-color: #FF00FF;
+}
+
+.Port_GameObject {
+	--port-color: #FF0000;
+}
+
+.Port_Boolean {
+	--port-color: #ff8330;
+}
+
+.Port_ConditionalLink {
+	--port-color: #FFFF30;
+}
+
+.Port_AnimationCurve {
+	--port-color: #FF0080;
+}
+
+.Port_Gradient {
+	--port-color: #FF8000;
+}
