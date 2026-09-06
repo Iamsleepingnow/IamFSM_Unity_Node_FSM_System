@@ -1,0 +1,21 @@
+{
+    "name": "FSMGraph.Editor",
+    "rootNamespace": "",
+    "references": [
+        "com.alelievr.NodeGraphProcessor.Editor",
+        "NodeGraphProcessor.Runtime",
+        "FSMGraph",
+        "FSMEngine.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
