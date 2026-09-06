@@ -1,0 +1,429 @@
+{
+  "nodes": [
+    {
+      "rid": 1000,
+      "name": "入口状态 Entry State",
+      "typeName": "NEntryState",
+      "assembly": "FSMGraph",
+      "positionX": 402.6667,
+      "positionY": 164.0,
+      "properties": [],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1001,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1001,
+      "name": "切换状态 Go to State",
+      "typeName": "NGoToState",
+      "assembly": "FSMGraph",
+      "positionX": 789.3333,
+      "positionY": 164.0,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "state",
+          "portTypeName": "string",
+          "defaultValue": "Idle",
+          "connections": []
+        },
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1000,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "rid": 1002,
+      "name": "进入状态 In State",
+      "typeName": "NInState",
+      "assembly": "FSMGraph",
+      "positionX": 402.666656,
+      "positionY": 400.666656,
+      "properties": [
+        {
+          "name": "state",
+          "typeName": "string",
+          "value": "Idle"
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1003,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1003,
+      "name": "条件满足 Performed",
+      "typeName": "NPerformed",
+      "assembly": "FSMGraph",
+      "positionX": 789.3333,
+      "positionY": 400.666656,
+      "properties": [
+        {
+          "name": "isAnd",
+          "typeName": "bool",
+          "value": true
+        }
+      ],
+      "inputs": [
+        {
+          "fieldName": "condition",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": [
+            {
+              "targetRid": 1009,
+              "targetPort": "onMouseDown"
+            }
+          ]
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1002,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1004,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1004,
+      "name": "切换状态 Go to State",
+      "typeName": "NGoToState",
+      "assembly": "FSMGraph",
+      "positionX": 1134.0,
+      "positionY": 400.666656,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "state",
+          "portTypeName": "string",
+          "defaultValue": "Triggered",
+          "connections": []
+        },
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1003,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "rid": 1005,
+      "name": "进入状态 In State",
+      "typeName": "NInState",
+      "assembly": "FSMGraph",
+      "positionX": 402.666718,
+      "positionY": 785.333435,
+      "properties": [
+        {
+          "name": "state",
+          "typeName": "string",
+          "value": "Triggered"
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1006,
+              "targetPort": "executed"
+            },
+            {
+              "targetRid": 1010,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1006,
+      "name": "日志输出 Debug Log",
+      "typeName": "NDebugLog",
+      "assembly": "FSMGraph",
+      "positionX": 711.3333,
+      "positionY": 785.3334,
+      "properties": [
+        {
+          "name": "text",
+          "typeName": "string",
+          "value": "hello world!"
+        },
+        {
+          "name": "logType",
+          "typeName": "LogType",
+          "value": 3
+        }
+      ],
+      "inputs": [
+        {
+          "fieldName": "obj",
+          "portTypeName": "Object",
+          "defaultValue": null,
+          "connections": []
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1005,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1007,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1007,
+      "name": "等待秒数 Wait Seconds",
+      "typeName": "NWaitSeconds",
+      "assembly": "FSMGraph",
+      "positionX": 996.6667,
+      "positionY": 785.3334,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "isBackground",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "isBreak",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "seconds",
+          "portTypeName": "float",
+          "defaultValue": 1.0,
+          "connections": []
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1006,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "progress",
+          "portTypeName": "float",
+          "defaultValue": 0.0,
+          "connections": []
+        },
+        {
+          "fieldName": "breakLink",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": []
+        },
+        {
+          "fieldName": "delayUpdate",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": []
+        },
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1008,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1008,
+      "name": "切换状态 Go to State",
+      "typeName": "NGoToState",
+      "assembly": "FSMGraph",
+      "positionX": 1308.66663,
+      "positionY": 785.3334,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "state",
+          "portTypeName": "string",
+          "defaultValue": "Idle",
+          "connections": []
+        },
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1007,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "rid": 1009,
+      "name": "鼠标监听 Listen Input Mouse",
+      "typeName": "NListenInputMouse",
+      "assembly": "FSMGraph",
+      "positionX": 402.666718,
+      "positionY": 542.051636,
+      "properties": [
+        {
+          "name": "mouseButton",
+          "typeName": "int",
+          "value": 0
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "onMouse",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "onMouseUp",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "onMouseDown",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": [
+            {
+              "targetRid": 1003,
+              "targetPort": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1010,
+      "name": "事件触发 Event Invoke",
+      "typeName": "NEventInvoke",
+      "assembly": "FSMGraph",
+      "positionX": 711.3333,
+      "positionY": 1028.16248,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "message",
+          "portTypeName": "string",
+          "defaultValue": "Trigger",
+          "connections": []
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1005,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": []
+        }
+      ]
+    }
+  ],
+  "exposedParameterRids": []
+}

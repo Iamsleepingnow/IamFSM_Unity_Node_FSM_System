@@ -1,0 +1,1213 @@
+{
+  "nodes": [
+    {
+      "rid": 1000,
+      "name": "入口状态 Entry State",
+      "typeName": "NEntryState",
+      "assembly": "FSMGraph",
+      "positionX": 574.6667,
+      "positionY": 233.333313,
+      "properties": [],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1001,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1001,
+      "name": "切换状态 Go to State",
+      "typeName": "NGoToState",
+      "assembly": "FSMGraph",
+      "positionX": 926.6666,
+      "positionY": 233.333344,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "state",
+          "portTypeName": "string",
+          "defaultValue": "Idle",
+          "connections": []
+        },
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1000,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "rid": 1002,
+      "name": "进入状态 In State",
+      "typeName": "NInState",
+      "assembly": "FSMGraph",
+      "positionX": 574.6667,
+      "positionY": 555.724365,
+      "properties": [
+        {
+          "name": "state",
+          "typeName": "string",
+          "value": "Idle"
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1003,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1003,
+      "name": "条件满足 Performed",
+      "typeName": "NPerformed",
+      "assembly": "FSMGraph",
+      "positionX": 926.666748,
+      "positionY": 556.6666,
+      "properties": [
+        {
+          "name": "isAnd",
+          "typeName": "bool",
+          "value": true
+        }
+      ],
+      "inputs": [
+        {
+          "fieldName": "condition",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": [
+            {
+              "targetRid": 1004,
+              "targetPort": "onMouseDown"
+            }
+          ]
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1002,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1021,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1004,
+      "name": "鼠标监听 Listen Input Mouse",
+      "typeName": "NListenInputMouse",
+      "assembly": "FSMGraph",
+      "positionX": 926.6666,
+      "positionY": 409.999969,
+      "properties": [
+        {
+          "name": "mouseButton",
+          "typeName": "int",
+          "value": 0
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "onMouse",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "onMouseUp",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "onMouseDown",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": [
+            {
+              "targetRid": 1003,
+              "targetPort": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1005,
+      "name": "切换状态 Go to State",
+      "typeName": "NGoToState",
+      "assembly": "FSMGraph",
+      "positionX": 1619.57373,
+      "positionY": 556.6667,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "state",
+          "portTypeName": "string",
+          "defaultValue": "ForEach",
+          "connections": []
+        },
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1021,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "rid": 1006,
+      "name": "进入状态 In State",
+      "typeName": "NInState",
+      "assembly": "FSMGraph",
+      "positionX": 574.666748,
+      "positionY": 1107.16687,
+      "properties": [
+        {
+          "name": "state",
+          "typeName": "string",
+          "value": "ForEach"
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1019,
+              "targetPort": "executed"
+            },
+            {
+              "targetRid": 1020,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1007,
+      "name": "Parameter",
+      "typeName": "ParameterNode",
+      "assembly": "NodeGraphProcessor.Runtime",
+      "positionX": 1167.33337,
+      "positionY": 878.5002,
+      "properties": [
+        {
+          "name": "parameterRid",
+          "typeName": "int",
+          "value": 1028
+        },
+        {
+          "name": "parameterValueType",
+          "typeName": "string",
+          "value": "int"
+        },
+        {
+          "name": "accessor",
+          "typeName": "int",
+          "value": 0
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "output",
+          "portTypeName": "int",
+          "defaultValue": 0,
+          "connections": [
+            {
+              "targetRid": 1008,
+              "targetPort": "a"
+            },
+            {
+              "targetRid": 1011,
+              "targetPort": "a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1008,
+      "name": "数字比较 Compare Number",
+      "typeName": "NCompareNumber",
+      "assembly": "FSMGraph",
+      "positionX": 1167.33337,
+      "positionY": 985.1669,
+      "properties": [
+        {
+          "name": "function",
+          "typeName": "NodeNumberCompareMethod",
+          "value": 3
+        }
+      ],
+      "inputs": [
+        {
+          "fieldName": "b",
+          "portTypeName": "float",
+          "defaultValue": 50.0,
+          "connections": [
+            {
+              "targetRid": 1009,
+              "targetPort": "output"
+            }
+          ]
+        },
+        {
+          "fieldName": "a",
+          "portTypeName": "float",
+          "defaultValue": 0.0,
+          "connections": [
+            {
+              "targetRid": 1007,
+              "targetPort": "output"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "result",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": [
+            {
+              "targetRid": 1026,
+              "targetPort": "isA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1009,
+      "name": "Parameter",
+      "typeName": "ParameterNode",
+      "assembly": "NodeGraphProcessor.Runtime",
+      "positionX": 1167.33337,
+      "positionY": 931.833557,
+      "properties": [
+        {
+          "name": "parameterRid",
+          "typeName": "int",
+          "value": 1029
+        },
+        {
+          "name": "parameterValueType",
+          "typeName": "string",
+          "value": "int"
+        },
+        {
+          "name": "accessor",
+          "typeName": "int",
+          "value": 0
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "output",
+          "portTypeName": "int",
+          "defaultValue": 50,
+          "connections": [
+            {
+              "targetRid": 1008,
+              "targetPort": "b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1010,
+      "name": "Parameter",
+      "typeName": "ParameterNode",
+      "assembly": "NodeGraphProcessor.Runtime",
+      "positionX": 1411.3335,
+      "positionY": 976.5002,
+      "properties": [
+        {
+          "name": "parameterRid",
+          "typeName": "int",
+          "value": 1028
+        },
+        {
+          "name": "parameterValueType",
+          "typeName": "string",
+          "value": "int"
+        },
+        {
+          "name": "accessor",
+          "typeName": "int",
+          "value": 1
+        }
+      ],
+      "inputs": [
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1026,
+              "targetPort": "executesA"
+            }
+          ]
+        },
+        {
+          "fieldName": "input",
+          "portTypeName": "int",
+          "defaultValue": null,
+          "connections": [
+            {
+              "targetRid": 1011,
+              "targetPort": "outputValue"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "rid": 1011,
+      "name": "浮点单值计算 Single Math",
+      "typeName": "NSingleMath",
+      "assembly": "FSMGraph",
+      "positionX": 1411.3335,
+      "positionY": 878.5002,
+      "properties": [
+        {
+          "name": "method",
+          "typeName": "NodeSingleMathMethod",
+          "value": 0
+        }
+      ],
+      "inputs": [
+        {
+          "fieldName": "a",
+          "portTypeName": "float",
+          "defaultValue": 0.0,
+          "connections": [
+            {
+              "targetRid": 1007,
+              "targetPort": "output"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "outputValue",
+          "portTypeName": "float",
+          "defaultValue": 0.0,
+          "connections": [
+            {
+              "targetRid": 1010,
+              "targetPort": "input"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1012,
+      "name": "切换状态 Go to State",
+      "typeName": "NGoToState",
+      "assembly": "FSMGraph",
+      "positionX": 2186.6665,
+      "positionY": 1107.33337,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "state",
+          "portTypeName": "string",
+          "defaultValue": "ForEach",
+          "connections": []
+        },
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1027,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "rid": 1013,
+      "name": "数字比较 Compare Number",
+      "typeName": "NCompareNumber",
+      "assembly": "FSMGraph",
+      "positionX": 1167.33337,
+      "positionY": 1505.16687,
+      "properties": [
+        {
+          "name": "function",
+          "typeName": "NodeNumberCompareMethod",
+          "value": 4
+        }
+      ],
+      "inputs": [
+        {
+          "fieldName": "b",
+          "portTypeName": "float",
+          "defaultValue": 50.0,
+          "connections": [
+            {
+              "targetRid": 1024,
+              "targetPort": "output"
+            }
+          ]
+        },
+        {
+          "fieldName": "a",
+          "portTypeName": "float",
+          "defaultValue": 0.0,
+          "connections": [
+            {
+              "targetRid": 1023,
+              "targetPort": "output"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "result",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": [
+            {
+              "targetRid": 1025,
+              "targetPort": "isA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1014,
+      "name": "Parameter",
+      "typeName": "ParameterNode",
+      "assembly": "NodeGraphProcessor.Runtime",
+      "positionX": 1411.33337,
+      "positionY": 1760.66663,
+      "properties": [
+        {
+          "name": "parameterRid",
+          "typeName": "int",
+          "value": 1028
+        },
+        {
+          "name": "parameterValueType",
+          "typeName": "string",
+          "value": "int"
+        },
+        {
+          "name": "accessor",
+          "typeName": "int",
+          "value": 1
+        }
+      ],
+      "inputs": [
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1025,
+              "targetPort": "executesA"
+            }
+          ]
+        },
+        {
+          "fieldName": "input",
+          "portTypeName": "int",
+          "defaultValue": null,
+          "connections": [
+            {
+              "targetRid": 1015,
+              "targetPort": "outputValue"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "rid": 1015,
+      "name": "整数 Integer",
+      "typeName": "NInteger",
+      "assembly": "FSMGraph",
+      "positionX": 1187.33337,
+      "positionY": 1772.0,
+      "properties": [
+        {
+          "name": "value",
+          "typeName": "int",
+          "value": 0
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "outputValue",
+          "portTypeName": "int",
+          "defaultValue": 0,
+          "connections": [
+            {
+              "targetRid": 1014,
+              "targetPort": "input"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1016,
+      "name": "切换状态 Go to State",
+      "typeName": "NGoToState",
+      "assembly": "FSMGraph",
+      "positionX": 1895.667,
+      "positionY": 1627.33337,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "state",
+          "portTypeName": "string",
+          "defaultValue": "Idle",
+          "connections": []
+        },
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1018,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "rid": 1017,
+      "name": "事件触发 Event Invoke",
+      "typeName": "NEventInvoke",
+      "assembly": "FSMGraph",
+      "positionX": 1550.66663,
+      "positionY": 1107.16687,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "message",
+          "portTypeName": "string",
+          "defaultValue": "ForEachTick",
+          "connections": []
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1026,
+              "targetPort": "executesA"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1027,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1018,
+      "name": "事件触发 Event Invoke",
+      "typeName": "NEventInvoke",
+      "assembly": "FSMGraph",
+      "positionX": 1550.66687,
+      "positionY": 1627.33337,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "message",
+          "portTypeName": "string",
+          "defaultValue": "Completed",
+          "connections": []
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1025,
+              "targetPort": "executesA"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1016,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1019,
+      "name": "分支排序 Node Order",
+      "typeName": "NNodeOrder",
+      "assembly": "FSMGraph",
+      "positionX": 904.000061,
+      "positionY": 1627.33325,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "order",
+          "portTypeName": "int",
+          "defaultValue": 1,
+          "connections": []
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1006,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1025,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1020,
+      "name": "分支排序 Node Order",
+      "typeName": "NNodeOrder",
+      "assembly": "FSMGraph",
+      "positionX": 904.0,
+      "positionY": 1106.66675,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "order",
+          "portTypeName": "int",
+          "defaultValue": 0,
+          "connections": []
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1006,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1026,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1021,
+      "name": "日志输出 Debug Log",
+      "typeName": "NDebugLog",
+      "assembly": "FSMGraph",
+      "positionX": 1266.0,
+      "positionY": 556.6668,
+      "properties": [
+        {
+          "name": "text",
+          "typeName": "string",
+          "value": "循环的次数"
+        },
+        {
+          "name": "logType",
+          "typeName": "LogType",
+          "value": 3
+        }
+      ],
+      "inputs": [
+        {
+          "fieldName": "obj",
+          "portTypeName": "Object",
+          "defaultValue": null,
+          "connections": [
+            {
+              "targetRid": 1022,
+              "targetPort": "output"
+            }
+          ]
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1003,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1005,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1022,
+      "name": "Parameter",
+      "typeName": "ParameterNode",
+      "assembly": "NodeGraphProcessor.Runtime",
+      "positionX": 1266.0,
+      "positionY": 502.666626,
+      "properties": [
+        {
+          "name": "parameterRid",
+          "typeName": "int",
+          "value": 1029
+        },
+        {
+          "name": "parameterValueType",
+          "typeName": "string",
+          "value": "int"
+        },
+        {
+          "name": "accessor",
+          "typeName": "int",
+          "value": 0
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "output",
+          "portTypeName": "int",
+          "defaultValue": 50,
+          "connections": [
+            {
+              "targetRid": 1021,
+              "targetPort": "obj"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1023,
+      "name": "Parameter",
+      "typeName": "ParameterNode",
+      "assembly": "NodeGraphProcessor.Runtime",
+      "positionX": 1167.33325,
+      "positionY": 1398.66675,
+      "properties": [
+        {
+          "name": "parameterRid",
+          "typeName": "int",
+          "value": 1028
+        },
+        {
+          "name": "parameterValueType",
+          "typeName": "string",
+          "value": "int"
+        },
+        {
+          "name": "accessor",
+          "typeName": "int",
+          "value": 0
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "output",
+          "portTypeName": "int",
+          "defaultValue": 0,
+          "connections": [
+            {
+              "targetRid": 1013,
+              "targetPort": "a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1024,
+      "name": "Parameter",
+      "typeName": "ParameterNode",
+      "assembly": "NodeGraphProcessor.Runtime",
+      "positionX": 1167.33325,
+      "positionY": 1452.00012,
+      "properties": [
+        {
+          "name": "parameterRid",
+          "typeName": "int",
+          "value": 1029
+        },
+        {
+          "name": "parameterValueType",
+          "typeName": "string",
+          "value": "int"
+        },
+        {
+          "name": "accessor",
+          "typeName": "int",
+          "value": 0
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "output",
+          "portTypeName": "int",
+          "defaultValue": 50,
+          "connections": [
+            {
+              "targetRid": 1013,
+              "targetPort": "b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1025,
+      "name": "If Else 条件判断",
+      "typeName": "NIfElse",
+      "assembly": "FSMGraph",
+      "positionX": 1167.3335,
+      "positionY": 1627.33337,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "isA",
+          "portTypeName": "bool",
+          "defaultValue": true,
+          "connections": [
+            {
+              "targetRid": 1013,
+              "targetPort": "result"
+            }
+          ]
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1019,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executesB",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": []
+        },
+        {
+          "fieldName": "executesA",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1014,
+              "targetPort": "executed"
+            },
+            {
+              "targetRid": 1018,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1026,
+      "name": "If Else 条件判断",
+      "typeName": "NIfElse",
+      "assembly": "FSMGraph",
+      "positionX": 1167.3335,
+      "positionY": 1107.33362,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "isA",
+          "portTypeName": "bool",
+          "defaultValue": true,
+          "connections": [
+            {
+              "targetRid": 1008,
+              "targetPort": "result"
+            }
+          ]
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1020,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executesB",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": []
+        },
+        {
+          "fieldName": "executesA",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1010,
+              "targetPort": "executed"
+            },
+            {
+              "targetRid": 1017,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1027,
+      "name": "等待帧数 Wait Frames",
+      "typeName": "NWaitFrames",
+      "assembly": "FSMGraph",
+      "positionX": 1896.00012,
+      "positionY": 1107.33337,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "isBackground",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "isBreak",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "frames",
+          "portTypeName": "int",
+          "defaultValue": 1,
+          "connections": []
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1017,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "progress",
+          "portTypeName": "float",
+          "defaultValue": 0.0,
+          "connections": []
+        },
+        {
+          "fieldName": "breakLink",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": []
+        },
+        {
+          "fieldName": "delayUpdate",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": []
+        },
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1012,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1028,
+      "name": "Iteration",
+      "typeName": "IntParameter",
+      "assembly": "NodeGraphProcessor.Runtime",
+      "positionX": 0.0,
+      "positionY": 0.0,
+      "properties": [
+        {
+          "name": "value",
+          "typeName": "int",
+          "value": 0
+        }
+      ],
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "rid": 1029,
+      "name": "MaxCount",
+      "typeName": "IntParameter",
+      "assembly": "NodeGraphProcessor.Runtime",
+      "positionX": 0.0,
+      "positionY": 0.0,
+      "properties": [
+        {
+          "name": "value",
+          "typeName": "int",
+          "value": 50
+        }
+      ],
+      "inputs": [],
+      "outputs": []
+    }
+  ],
+  "exposedParameterRids": [
+    1028,
+    1029
+  ]
+}

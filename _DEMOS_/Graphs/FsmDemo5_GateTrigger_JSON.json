@@ -1,0 +1,344 @@
+{
+  "nodes": [
+    {
+      "rid": 1000,
+      "name": "入口状态 Entry State",
+      "typeName": "NEntryState",
+      "assembly": "FSMGraph",
+      "positionX": 894.6666,
+      "positionY": 346.666656,
+      "properties": [],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1001,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1001,
+      "name": "切换状态 Go to State",
+      "typeName": "NGoToState",
+      "assembly": "FSMGraph",
+      "positionX": 1253.33325,
+      "positionY": 346.666656,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "state",
+          "portTypeName": "string",
+          "defaultValue": "Idle",
+          "connections": []
+        },
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1000,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "rid": 1002,
+      "name": "进入状态 In State",
+      "typeName": "NInState",
+      "assembly": "FSMGraph",
+      "positionX": 894.6667,
+      "positionY": 610.6666,
+      "properties": [
+        {
+          "name": "state",
+          "typeName": "string",
+          "value": "Idle"
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1003,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1003,
+      "name": "条件满足 Performed",
+      "typeName": "NPerformed",
+      "assembly": "FSMGraph",
+      "positionX": 1412.66663,
+      "positionY": 610.6667,
+      "properties": [
+        {
+          "name": "isAnd",
+          "typeName": "bool",
+          "value": true
+        }
+      ],
+      "inputs": [
+        {
+          "fieldName": "condition",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": [
+            {
+              "targetRid": 1004,
+              "targetPort": "onTriggerEnter"
+            }
+          ]
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1002,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1005,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1004,
+      "name": "触发检测(远程) Trigger Detect Proxy",
+      "typeName": "NTriggerProxyDetect",
+      "assembly": "FSMGraph",
+      "positionX": 1096.66821,
+      "positionY": 701.3167,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "passLayerMask",
+          "portTypeName": "int",
+          "defaultValue": -1,
+          "connections": []
+        },
+        {
+          "fieldName": "proxyId",
+          "portTypeName": "string",
+          "defaultValue": "GateTrigger",
+          "connections": []
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "exitObjectCount",
+          "portTypeName": "int",
+          "defaultValue": 0,
+          "connections": []
+        },
+        {
+          "fieldName": "stayObjectCount",
+          "portTypeName": "int",
+          "defaultValue": 0,
+          "connections": []
+        },
+        {
+          "fieldName": "enterObjectCount",
+          "portTypeName": "int",
+          "defaultValue": 0,
+          "connections": []
+        },
+        {
+          "fieldName": "onTriggerExit2D",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "onTriggerStay2D",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "onTriggerEnter2D",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "onTriggerExit",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "onTriggerStay",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": []
+        },
+        {
+          "fieldName": "onTriggerEnter",
+          "portTypeName": "bool",
+          "defaultValue": false,
+          "connections": [
+            {
+              "targetRid": 1003,
+              "targetPort": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1005,
+      "name": "事件触发 Event Invoke",
+      "typeName": "NEventInvoke",
+      "assembly": "FSMGraph",
+      "positionX": 1702.0,
+      "positionY": 610.6667,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "message",
+          "portTypeName": "string",
+          "defaultValue": "Triggered",
+          "connections": []
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1003,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1006,
+              "targetPort": "executed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1006,
+      "name": "日志输出 Debug Log",
+      "typeName": "NDebugLog",
+      "assembly": "FSMGraph",
+      "positionX": 1938.78271,
+      "positionY": 610.6667,
+      "properties": [
+        {
+          "name": "text",
+          "typeName": "string",
+          "value": "进入"
+        },
+        {
+          "name": "logType",
+          "typeName": "LogType",
+          "value": 3
+        }
+      ],
+      "inputs": [
+        {
+          "fieldName": "obj",
+          "portTypeName": "Object",
+          "defaultValue": null,
+          "connections": []
+        },
+        {
+          "fieldName": "executed",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1005,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1007,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rid": 1007,
+      "name": "切换状态 Go to State",
+      "typeName": "NGoToState",
+      "assembly": "FSMGraph",
+      "positionX": 2215.24634,
+      "positionY": 610.6666,
+      "properties": [],
+      "inputs": [
+        {
+          "fieldName": "state",
+          "portTypeName": "string",
+          "defaultValue": "Idle",
+          "connections": []
+        },
+        {
+          "fieldName": "executes",
+          "portTypeName": "exec",
+          "defaultValue": {},
+          "connections": [
+            {
+              "targetRid": 1006,
+              "targetPort": "executes"
+            }
+          ]
+        }
+      ],
+      "outputs": []
+    }
+  ],
+  "exposedParameterRids": []
+}

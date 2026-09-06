@@ -1,0 +1,929 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31390c44c9f3a3d40b424bf6821999a2, type: 3}
+  m_Name: FsmDemo2_Properties
+  m_EditorClassIdentifier: NodeGraphProcessor.Runtime::GraphProcessor.BaseGraph
+  nodes:
+  - rid: 5214929292709069418
+  - rid: 5214929292709069419
+  - rid: 5214929292709069420
+  - rid: 5214929292709069421
+  - rid: 5214929292709069422
+  - rid: 5214929292709069429
+  - rid: 5214929292709069430
+  - rid: 5214929292709069431
+  - rid: 5214929292709069432
+  - rid: 5214929292709069434
+  - rid: 5214929292709069435
+  - rid: 5214929292709069436
+  - rid: 5214929292709069437
+  - rid: 5214929292709069438
+  - rid: 5214929292709069439
+  - rid: 5214929292709069440
+  - rid: 5214929292709069441
+  - rid: 5214929292709069442
+  - rid: 5214929292709069481
+  - rid: 5214929292709069512
+  - rid: 5214929316377788518
+  - rid: 5214929316377788579
+  - rid: 5214929316377788581
+  - rid: 5214929316377788630
+  - rid: 5214929316377788709
+  - rid: 5214929336822398988
+  - rid: 5214929336822398989
+  - rid: 5214929336822398990
+  edges:
+  - GUID: 29d72290-098a-490d-8da5-9dabdda5a2b0
+    owner: {fileID: 11400000}
+    inputNodeGUID: 98c66096-ef43-42a1-9a3c-5e90b0e0b592
+    outputNodeGUID: fd7ed401-6447-4143-8649-d7dd8556a648
+    inputFieldName: executes
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: cf5e0b3b-1282-4428-8172-f0195f97ef40
+    owner: {fileID: 11400000}
+    inputNodeGUID: 91b18a2a-d2ef-4fcf-81bc-03e8d5066879
+    outputNodeGUID: 7d18bf2b-e901-4812-8f1b-32c1bf6f1b62
+    inputFieldName: input
+    outputFieldName: outputValue
+    inputPortIdentifier: input
+    outputPortIdentifier: 
+  - GUID: 907cc460-e256-4f58-9fb7-02fa1bc07308
+    owner: {fileID: 11400000}
+    inputNodeGUID: 91b18a2a-d2ef-4fcf-81bc-03e8d5066879
+    outputNodeGUID: fd7ed401-6447-4143-8649-d7dd8556a648
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: executed
+    outputPortIdentifier: 
+  - GUID: 9aabea81-14ff-4672-a89e-4c7a40ec2ab8
+    owner: {fileID: 11400000}
+    inputNodeGUID: 3e27a6c0-5941-47cd-9e49-153ce44e0133
+    outputNodeGUID: d97c3ae7-e34d-47c4-93c4-1823f87b5b4b
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 8deb9588-9b3f-43fd-8890-24b5b9e40de3
+    owner: {fileID: 11400000}
+    inputNodeGUID: 465df099-bfbc-4d90-84fd-8eddf5c9c7d5
+    outputNodeGUID: 9f8f7d2a-4d20-44ef-a2c3-ca3216e981ba
+    inputFieldName: a
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: output
+  - GUID: 67ca332b-4fe4-4b4a-bc98-3c58879a2a87
+    owner: {fileID: 11400000}
+    inputNodeGUID: 465df099-bfbc-4d90-84fd-8eddf5c9c7d5
+    outputNodeGUID: e66819c1-a7bd-4f82-99ec-8889451694c8
+    inputFieldName: b
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: output
+  - GUID: 6ce80109-9a4c-480a-a37e-8694ac55c359
+    owner: {fileID: 11400000}
+    inputNodeGUID: 3e27a6c0-5941-47cd-9e49-153ce44e0133
+    outputNodeGUID: 465df099-bfbc-4d90-84fd-8eddf5c9c7d5
+    inputFieldName: condition
+    outputFieldName: result
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 10aa56de-f6fd-4c0b-87f9-7000d556efc8
+    owner: {fileID: 11400000}
+    inputNodeGUID: 3e27a6c0-5941-47cd-9e49-153ce44e0133
+    outputNodeGUID: fe4fd38b-8272-49f6-baad-e1de7f7520e3
+    inputFieldName: condition
+    outputFieldName: onMouseDown
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 322792e7-a5fa-47b3-8802-b13d0656d5e5
+    owner: {fileID: 11400000}
+    inputNodeGUID: 53e26c8f-77a6-48f3-9be9-c0db247049cf
+    outputNodeGUID: 3e27a6c0-5941-47cd-9e49-153ce44e0133
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 2443b906-0984-4b43-95d2-b8dba92609b2
+    owner: {fileID: 11400000}
+    inputNodeGUID: 8a107128-bef2-4836-80da-2174491ee095
+    outputNodeGUID: 3e27a6c0-5941-47cd-9e49-153ce44e0133
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 342d3617-cda5-4bcd-906b-67d6f089c658
+    owner: {fileID: 11400000}
+    inputNodeGUID: 033a9dc6-f1ce-4112-abf1-6088efc5b8eb
+    outputNodeGUID: 8a107128-bef2-4836-80da-2174491ee095
+    inputFieldName: executes
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 3063254b-0b00-494c-bd8d-f45ab6402d1c
+    owner: {fileID: 11400000}
+    inputNodeGUID: 4378e5a3-a2f6-4876-aae1-98cc04e7ecaa
+    outputNodeGUID: 9f8f7d2a-4d20-44ef-a2c3-ca3216e981ba
+    inputFieldName: a
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: output
+  - GUID: adb66839-21c6-4027-973f-df11a873ca60
+    owner: {fileID: 11400000}
+    inputNodeGUID: c84026d4-700d-40c6-b826-fb7b4d291770
+    outputNodeGUID: 4378e5a3-a2f6-4876-aae1-98cc04e7ecaa
+    inputFieldName: input
+    outputFieldName: outputValue
+    inputPortIdentifier: input
+    outputPortIdentifier: 
+  - GUID: 2de17b6e-d5bc-4505-a7a4-ab9bbeaa5cfc
+    owner: {fileID: 11400000}
+    inputNodeGUID: c84026d4-700d-40c6-b826-fb7b4d291770
+    outputNodeGUID: 3e27a6c0-5941-47cd-9e49-153ce44e0133
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: executed
+    outputPortIdentifier: 
+  - GUID: ac9a4721-8955-411b-a003-18ce7c5ac13d
+    owner: {fileID: 11400000}
+    inputNodeGUID: f747bb65-aab1-4526-b755-3fcb814fdb74
+    outputNodeGUID: d97c3ae7-e34d-47c4-93c4-1823f87b5b4b
+    inputFieldName: input
+    outputFieldName: executes
+    inputPortIdentifier: 0
+    outputPortIdentifier: 
+  - GUID: 1a98ebae-a756-44c4-b53f-860322ced035
+    owner: {fileID: 11400000}
+    inputNodeGUID: 2111da90-06b4-4b65-ba93-8666623b52e4
+    outputNodeGUID: f747bb65-aab1-4526-b755-3fcb814fdb74
+    inputFieldName: executed
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: 0
+  - GUID: 796c46b8-0904-4804-9946-d4610f8f93b9
+    owner: {fileID: 11400000}
+    inputNodeGUID: d3842a1a-994d-48ef-9fe5-1fd022e91183
+    outputNodeGUID: 2111da90-06b4-4b65-ba93-8666623b52e4
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 535f4016-240b-451d-a9fc-05fefeec20d0
+    owner: {fileID: 11400000}
+    inputNodeGUID: 033a9dc6-f1ce-4112-abf1-6088efc5b8eb
+    outputNodeGUID: d3842a1a-994d-48ef-9fe5-1fd022e91183
+    inputFieldName: executes
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: e3271a48-4449-4fb9-b2d0-4df11d65863f
+    owner: {fileID: 11400000}
+    inputNodeGUID: f7f9622a-d950-44c0-ac57-e1fed5c928fc
+    outputNodeGUID: 9f8f7d2a-4d20-44ef-a2c3-ca3216e981ba
+    inputFieldName: a
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: output
+  - GUID: 2b415298-bcf3-4fef-b3d2-ed85e02ddddd
+    owner: {fileID: 11400000}
+    inputNodeGUID: f7f9622a-d950-44c0-ac57-e1fed5c928fc
+    outputNodeGUID: e66819c1-a7bd-4f82-99ec-8889451694c8
+    inputFieldName: b
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: output
+  - GUID: 51165475-acc4-4d74-9bf0-440e5df887bb
+    owner: {fileID: 11400000}
+    inputNodeGUID: 2111da90-06b4-4b65-ba93-8666623b52e4
+    outputNodeGUID: f7f9622a-d950-44c0-ac57-e1fed5c928fc
+    inputFieldName: condition
+    outputFieldName: result
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 07467536-0a56-4337-958b-5e2d897fd78d
+    owner: {fileID: 11400000}
+    inputNodeGUID: 8447dd17-96e6-4e06-974f-95faa4372caf
+    outputNodeGUID: 2111da90-06b4-4b65-ba93-8666623b52e4
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: executed
+    outputPortIdentifier: 
+  - GUID: 32cc341a-03bd-4cb7-a9e6-269cfcc6640d
+    owner: {fileID: 11400000}
+    inputNodeGUID: 8447dd17-96e6-4e06-974f-95faa4372caf
+    outputNodeGUID: c79e636c-f6a9-4c4f-bfa2-c9f9650d2740
+    inputFieldName: input
+    outputFieldName: outputValue
+    inputPortIdentifier: input
+    outputPortIdentifier: 
+  - GUID: 19d1fb34-7a06-482e-9975-6669ce71dd0b
+    owner: {fileID: 11400000}
+    inputNodeGUID: 563fd965-84b6-4184-9362-655d1452e7c2
+    outputNodeGUID: 2111da90-06b4-4b65-ba93-8666623b52e4
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 37e329e5-e3d9-4f2a-b1c1-d0f01a90d7ad
+    owner: {fileID: 11400000}
+    inputNodeGUID: 1e82e2c4-ec8c-4dee-b538-d16005e16516
+    outputNodeGUID: d3842a1a-994d-48ef-9fe5-1fd022e91183
+    inputFieldName: executed
+    outputFieldName: delayUpdate
+    inputPortIdentifier: executed
+    outputPortIdentifier: 
+  - GUID: 707c7349-9dc5-4944-98e9-1542e40a3574
+    owner: {fileID: 11400000}
+    inputNodeGUID: 1e82e2c4-ec8c-4dee-b538-d16005e16516
+    outputNodeGUID: d3842a1a-994d-48ef-9fe5-1fd022e91183
+    inputFieldName: input
+    outputFieldName: progress
+    inputPortIdentifier: input
+    outputPortIdentifier: 
+  - GUID: 7504fd05-da89-4ad2-8d80-c899d752679c
+    owner: {fileID: 11400000}
+    inputNodeGUID: 1b76a4a6-cb02-4b49-aa61-864347f9b5d5
+    outputNodeGUID: d3842a1a-994d-48ef-9fe5-1fd022e91183
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: executed
+    outputPortIdentifier: 
+  - GUID: 32ff3433-1011-43cc-bfdc-4dd2eb8645cb
+    owner: {fileID: 11400000}
+    inputNodeGUID: 1b76a4a6-cb02-4b49-aa61-864347f9b5d5
+    outputNodeGUID: a3bffb3c-1677-44bc-be95-b2343a509eaf
+    inputFieldName: input
+    outputFieldName: outputValue
+    inputPortIdentifier: input
+    outputPortIdentifier: 
+  - GUID: 3b2271ed-10ab-43a2-a6d0-9b01b11264d8
+    owner: {fileID: 11400000}
+    inputNodeGUID: 8a107128-bef2-4836-80da-2174491ee095
+    outputNodeGUID: 9f8f7d2a-4d20-44ef-a2c3-ca3216e981ba
+    inputFieldName: obj
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: output
+  groups:
+  - title: "\u8FD9\u4E9B\u662F\u53C2\u6570\u8282\u70B9"
+    color: {r: 0.023679733, g: 1, b: 0, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 362.78568
+      y: -386.1242
+      width: 243.33334
+      height: 87.33334
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 3a370b09-4207-4b12-a525-231c222b1ab3
+    - d6e7752f-e97c-4ad7-aebb-1f7731878d25
+    - e781c510-6852-4f2f-9cd9-5f3c021e388e
+  stackNodes: []
+  pinnedElements:
+  - position:
+      serializedVersion: 2
+      x: 6.666664
+      y: 29.333313
+      width: 232.66667
+      height: 460.66666
+    opened: 1
+    editorType:
+      serializedType: GraphProcessor.ExposedParameterView, com.alelievr.NodeGraphProcessor.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  exposedParameters:
+  - rid: 5214929292709069425
+  - rid: 5214929292709069475
+  - rid: 5214929316377788514
+  stickyNotes:
+  - position:
+      serializedVersion: 2
+      x: 57.333305
+      y: -101.39029
+      width: 267.3333
+      height: 104.666664
+    title: "\u903B\u8F91\u5165\u53E3"
+    content: "\u5F53\u5F00\u59CB\u8FD0\u884C\u65F6\uFF0C\u5C06Count\u91CD\u7F6E\u4E3A0\uFF0C\u7136\u540E\u8FDB\u5165Idle\u72B6\u6001\u3002"
+  - position:
+      serializedVersion: 2
+      x: 60.666668
+      y: 427.33334
+      width: 267.33334
+      height: 136.66666
+    title: "\u8FDB\u5165Idle\u72B6\u6001"
+    content: "\u5F53\u8FDB\u5165Idle\u72B6\u6001\u65F6\uFF0C\u9700\u8981\u540C\u65F6\u5BF9\u4E0A\u4E0B\u4E24\u4E2A`\u6761\u4EF6\u6EE1\u8DB3`\u8282\u70B9\u8FDB\u884C\u5224\u65AD\uFF1A\n1.
+      \u5F53\u6309\u4E0B\u9F20\u6807\u5DE6\u952E\u4E14Count\u5C0F\u4E8EGate\u3002\n2.
+      \u5F53Count\u5927\u4E8E\u7B49\u4E8EGate\u3002\n\u5F53\u5176\u4E2D\u4E00\u4E2A`\u6761\u4EF6\u6EE1\u8DB3`\u8282\u70B9\u901A\u8FC7\u65F6\uFF0C\u5176\u4F59\u7684`\u6761\u4EF6\u6EE1\u8DB3`\u8282\u70B9\u90FD\u4E0D\u518D\u8FDB\u884C\u5224\u65AD\u3002"
+  - position:
+      serializedVersion: 2
+      x: 849.99994
+      y: 282.66666
+      width: 267.3333
+      height: 102.66669
+    title: "\u6761\u4EF6\u6EE1\u8DB3"
+    content: "\u5F53\u6B64\u6761\u4EF6\u6EE1\u8DB3\u65F6\uFF0C\u89E6\u53D1Click\u4E8B\u4EF6\uFF0C\u8F93\u51FA\u65E5\u5FD7\uFF0CCount\u6570\u503C\u7D2F\u52A0\uFF0C\u91CD\u65B0\u8FDB\u5165Idle\u72B6\u6001\u3002"
+  - position:
+      serializedVersion: 2
+      x: 744.18146
+      y: 1187.6584
+      width: 267.33337
+      height: 102.666626
+    title: "\u6761\u4EF6\u6EE1\u8DB3"
+    content: "\u5F53\u6B64\u6761\u4EF6\u6EE1\u8DB3\u65F6\uFF0C\u89E6\u53D1Reload\u4E8B\u4EF6\uFF0C\u5C06Count\u91CD\u7F6E\u4E3A0\uFF0C\u5E76\u8FDB\u5165`\u7B49\u5F85\u79D2\u6570`\u8282\u70B9\u3002"
+  - position:
+      serializedVersion: 2
+      x: 1843.16
+      y: 1026.8385
+      width: 267.33337
+      height: 102.66675
+    title: "\u5EF6\u65F6\u7B49\u5F85"
+    content: "\u5F53\u7B49\u5F85\u8FDB\u884C\u4E2D\u65F6\uFF0C\u6BCF\u5E27\u89E6\u53D1`Delay
+      Update`\u7EBF\uFF0C\u5C06ReloadProgress\u8BBE\u7F6E\u4E3A\u7B49\u5F85\u8FDB\u5EA6\uFF080~1\uFF09\u3002\n\u5F53\u7B49\u5F85\u5B8C\u6210\u65F6\uFF0C\u5C06ReloadProgress\u91CD\u7F6E\u4E3A0\u3002"
+  - position:
+      serializedVersion: 2
+      x: 57.536175
+      y: -571.6522
+      width: 267.33334
+      height: 104.66666
+    title: "\u53C2\u6570\u9762\u677F"
+    content: "\u5728\u6B64\u7A97\u53E3\u7684\u5DE6\u4E0A\u89D2\u6709\u4E00\u4E2A`\u663E\u793A\u53C2\u6570`\u6309\u94AE\uFF0C\u70B9\u51FB\u5E76\u67E5\u770B\u8282\u70B9\u56FE\u7684\u53C2\u6570\u3002"
+  - position:
+      serializedVersion: 2
+      x: 57.24634
+      y: -350.4927
+      width: 267.33334
+      height: 104.66666
+    title: "\u53C2\u6570GetSet\u8BFB\u5199\u8282\u70B9"
+    content: "\u5C06\u53C2\u6570\u9762\u677F\u4E2D\u7684\u53C2\u6570\u62D6\u62FD\u5230\u8282\u70B9\u56FE\u4E2D\u6765\uFF0C\u5C31\u53EF\u4EE5\u521B\u5EFA\u53C2\u6570\u8282\u70B9\u3002GetSet\u4E0B\u62C9\u83DC\u5355\u7528\u4E8E\u4FEE\u6539\u8282\u70B9\u7C7B\u578B\u3002"
+  - position:
+      serializedVersion: 2
+      x: 979.3333
+      y: -436.66666
+      width: 224.00006
+      height: 285.3333
+    title: "\u53C2\u6570\u7684\u5916\u90E8\u4EA4\u4E92"
+    content: "\u901A\u8FC7Fsm\u64AD\u653E\u5668\u6765\u83B7\u53D6\u5F53\u524D\u53C2\u6570\u3002\n\n\u83B7\u53D6\u65B9\u6CD5\uFF1A\nFsmObjectBase.TryGetInt()\n\r\rFsmObjectBase.TryGetFloat()\nFsmObjectBase.TryGetBool()\nFsmObjectBase.TryGetString()\nFsmObjectBase.TryGetVector4()\nFsmObjectBase.TryGetColor()\n\n\u8BBE\u7F6E\u65B9\u6CD5\uFF1A\nFsmObjectBase.SetInt()\nFsmObjectBase.SetFloat()\nFsmObjectBase.SetBool()\nFsmObjectBase.SetString()\nFsmObjectBase.SetVector4()\nFsmObjectBase.SetColor()"
+  showNodeRidLabel: 0
+  nodeInspectorReference: {fileID: 0}
+  position: {x: 613.3333, y: 437.33334, z: 0}
+  scale: {x: 0.65751624, y: 0.65751624, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5214929292709069418
+      type: {class: NEntryState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: fd7ed401-6447-4143-8649-d7dd8556a648
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: 363.33337
+          y: -91.39031
+          width: 157.99997
+          height: 77.33333
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+    - rid: 5214929292709069419
+      type: {class: NGoToState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 98c66096-ef43-42a1-9a3c-5e90b0e0b592
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 787.3333
+          y: -91.39031
+          width: 159.33337
+          height: 101.33333
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        state: Idle
+    - rid: 5214929292709069420
+      type: {class: NInState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: d97c3ae7-e34d-47c4-93c4-1823f87b5b4b
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: 363.3333
+          y: 428.59775
+          width: 187.33334
+          height: 97.99997
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        state: Idle
+    - rid: 5214929292709069421
+      type: {class: NGoToState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 033a9dc6-f1ce-4112-abf1-6088efc5b8eb
+        computeOrder: 20
+        position:
+          serializedVersion: 2
+          x: 1656.6665
+          y: 428.6667
+          width: 159.33337
+          height: 101.33334
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        state: Idle
+    - rid: 5214929292709069422
+      type: {class: NPerformed, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 3e27a6c0-5941-47cd-9e49-153ce44e0133
+        computeOrder: 7
+        position:
+          serializedVersion: 2
+          x: 879.33344
+          y: 428.66666
+          width: 176.00006
+          height: 120.00003
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        condition: 0
+        isAnd: 1
+    - rid: 5214929292709069425
+      type: {class: IntParameter, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        guid: fba11a42-9767-40d0-8132-eea7affe67c1
+        name: Count
+        type: 
+        serializedValue:
+          serializedType: 
+          serializedName: 
+          serializedValue: 
+        input: 1
+        settings:
+          rid: 5214929292709069426
+        val: 0
+    - rid: 5214929292709069426
+      type: {class: IntParameter/IntSettings, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        isHidden: 0
+        expanded: 0
+        guid: fba11a42-9767-40d0-8132-eea7affe67c1
+        mode: 0
+        min: 0
+        max: 10
+    - rid: 5214929292709069429
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: 9f8f7d2a-4d20-44ef-a2c3-ca3216e981ba
+        computeOrder: 17
+        position:
+          serializedVersion: 2
+          x: 316.66666
+          y: 793.3333
+          width: 117.33334
+          height: 53.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: fba11a42-9767-40d0-8132-eea7affe67c1
+        accessor: 0
+    - rid: 5214929292709069430
+      type: {class: NCompareNumber, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 465df099-bfbc-4d90-84fd-8eddf5c9c7d5
+        computeOrder: 5
+        position:
+          serializedVersion: 2
+          x: 610.00006
+          y: 513.3333
+          width: 195.33331
+          height: 122
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        function: 3
+        a: 0
+        b: 10
+        result: 0
+    - rid: 5214929292709069431
+      type: {class: NPerformed, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 2111da90-06b4-4b65-ba93-8666623b52e4
+        computeOrder: 12
+        position:
+          serializedVersion: 2
+          x: 879.33325
+          y: 928.33167
+          width: 176.00006
+          height: 120.00006
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        condition: 0
+        isAnd: 1
+    - rid: 5214929292709069432
+      type: {class: RelayNode, ns: , asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: f747bb65-aab1-4526-b755-3fcb814fdb74
+        computeOrder: 11
+        position:
+          serializedVersion: 2
+          x: 581.33325
+          y: 975.66504
+          width: 200
+          height: 200
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        unpackOutput: 0
+        packInput: 0
+        inputEdgeCount: 0
+    - rid: 5214929292709069434
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: c84026d4-700d-40c6-b826-fb7b4d291770
+        computeOrder: 9
+        position:
+          serializedVersion: 2
+          x: 1254
+          y: 738.6667
+          width: 93.333374
+          height: 109.33331
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: fba11a42-9767-40d0-8132-eea7affe67c1
+        accessor: 1
+    - rid: 5214929292709069435
+      type: {class: NSingleMath, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 4378e5a3-a2f6-4876-aae1-98cc04e7ecaa
+        computeOrder: 8
+        position:
+          serializedVersion: 2
+          x: 1027.3334
+          y: 748.6667
+          width: 193.33325
+          height: 98
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        method: 0
+        a: 0
+        outputValue: 0
+    - rid: 5214929292709069436
+      type: {class: NCompareNumber, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: f7f9622a-d950-44c0-ac57-e1fed5c928fc
+        computeOrder: 10
+        position:
+          serializedVersion: 2
+          x: 602.6666
+          y: 1046.3318
+          width: 232.66663
+          height: 122
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        function: 4
+        a: 0
+        b: 10
+        result: 0
+    - rid: 5214929292709069437
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: 8447dd17-96e6-4e06-974f-95faa4372caf
+        computeOrder: 14
+        position:
+          serializedVersion: 2
+          x: 1254.2609
+          y: 1046
+          width: 93.333374
+          height: 109.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: fba11a42-9767-40d0-8132-eea7affe67c1
+        accessor: 1
+    - rid: 5214929292709069438
+      type: {class: NInteger, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: c79e636c-f6a9-4c4f-bfa2-c9f9650d2740
+        computeOrder: 13
+        position:
+          serializedVersion: 2
+          x: 1055.3333
+          y: 1057.665
+          width: 156
+          height: 98
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        value: 0
+        outputValue: 0
+    - rid: 5214929292709069439
+      type: {class: NListenInputMouse, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: fe4fd38b-8272-49f6-baad-e1de7f7520e3
+        computeOrder: 6
+        position:
+          serializedVersion: 2
+          x: 602.6667
+          y: 282.66666
+          width: 202.66663
+          height: 146
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        mouseButton: 0
+        onMouseDown: 0
+        onMouseUp: 0
+        onMouse: 0
+    - rid: 5214929292709069440
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: 91b18a2a-d2ef-4fcf-81bc-03e8d5066879
+        computeOrder: 16
+        position:
+          serializedVersion: 2
+          x: 644.66675
+          y: 40.609684
+          width: 93.33331
+          height: 109.333336
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: fba11a42-9767-40d0-8132-eea7affe67c1
+        accessor: 1
+    - rid: 5214929292709069441
+      type: {class: NInteger, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 7d18bf2b-e901-4812-8f1b-32c1bf6f1b62
+        computeOrder: 15
+        position:
+          serializedVersion: 2
+          x: 416.66666
+          y: 40.609684
+          width: 156.00003
+          height: 97.99999
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        value: 0
+        outputValue: 0
+    - rid: 5214929292709069442
+      type: {class: NDebugLog, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 8a107128-bef2-4836-80da-2174491ee095
+        computeOrder: 18
+        position:
+          serializedVersion: 2
+          x: 1190
+          y: 429.33337
+          width: 193.33337
+          height: 205.99997
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        text: "\u70B9\u51FB\u6B21\u6570"
+        logType: 3
+    - rid: 5214929292709069475
+      type: {class: IntParameter, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        guid: c53a4534-12d2-4cc8-b36d-a8e63d27afc4
+        name: Gate
+        type: 
+        serializedValue:
+          serializedType: 
+          serializedName: 
+          serializedValue: 
+        input: 1
+        settings:
+          rid: 5214929292709069476
+        val: 10
+    - rid: 5214929292709069476
+      type: {class: IntParameter/IntSettings, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        isHidden: 0
+        expanded: 0
+        guid: c53a4534-12d2-4cc8-b36d-a8e63d27afc4
+        mode: 0
+        min: 0
+        max: 10
+    - rid: 5214929292709069481
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: e66819c1-a7bd-4f82-99ec-8889451694c8
+        computeOrder: 4
+        position:
+          serializedVersion: 2
+          x: 316.66666
+          y: 846.6667
+          width: 109.33334
+          height: 53.333313
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: c53a4534-12d2-4cc8-b36d-a8e63d27afc4
+        accessor: 0
+    - rid: 5214929292709069512
+      type: {class: NWaitSeconds, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: d3842a1a-994d-48ef-9fe5-1fd022e91183
+        computeOrder: 19
+        position:
+          serializedVersion: 2
+          x: 1383.3334
+          y: 928
+          width: 198.66663
+          height: 125.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        progress: 0
+        seconds: 1
+        isBreak: 0
+        isBackground: 0
+    - rid: 5214929316377788514
+      type: {class: FloatParameter, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        guid: dc625a14-8b33-4822-ae02-6cc7e9f1e5b4
+        name: ReloadProgress
+        type: 
+        serializedValue:
+          serializedType: 
+          serializedName: 
+          serializedValue: 
+        input: 1
+        settings:
+          rid: 5214929316377788515
+        val: 0
+    - rid: 5214929316377788515
+      type: {class: FloatParameter/FloatSettings, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        isHidden: 0
+        expanded: 0
+        guid: dc625a14-8b33-4822-ae02-6cc7e9f1e5b4
+        mode: 0
+        min: 0
+        max: 1
+    - rid: 5214929316377788518
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: 1e82e2c4-ec8c-4dee-b538-d16005e16516
+        computeOrder: 21
+        position:
+          serializedVersion: 2
+          x: 1657.967
+          y: 938.667
+          width: 158
+          height: 109.33331
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: dc625a14-8b33-4822-ae02-6cc7e9f1e5b4
+        accessor: 1
+    - rid: 5214929316377788579
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: 1b76a4a6-cb02-4b49-aa61-864347f9b5d5
+        computeOrder: 23
+        position:
+          serializedVersion: 2
+          x: 1658.0002
+          y: 1113.3334
+          width: 158
+          height: 109.33325
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: dc625a14-8b33-4822-ae02-6cc7e9f1e5b4
+        accessor: 1
+    - rid: 5214929316377788581
+      type: {class: NFloat, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: a3bffb3c-1677-44bc-be95-b2343a509eaf
+        computeOrder: 22
+        position:
+          serializedVersion: 2
+          x: 1466.0002
+          y: 1102.6667
+          width: 156
+          height: 98
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        value: 0
+        outputValue: 0
+    - rid: 5214929316377788630
+      type: {class: NEventInvoke, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 53e26c8f-77a6-48f3-9be9-c0db247049cf
+        computeOrder: 24
+        position:
+          serializedVersion: 2
+          x: 1190
+          y: 282.66666
+          width: 174
+          height: 101.33334
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        message: Click
+    - rid: 5214929316377788709
+      type: {class: NEventInvoke, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 563fd965-84b6-4184-9362-655d1452e7c2
+        computeOrder: 25
+        position:
+          serializedVersion: 2
+          x: 1108.6665
+          y: 1200.6666
+          width: 174
+          height: 101.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        message: Reload
+    - rid: 5214929336822398988
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: 3a370b09-4207-4b12-a525-231c222b1ab3
+        computeOrder: 26
+        position:
+          serializedVersion: 2
+          x: 389.73914
+          y: -319.6233
+          width: 117.33334
+          height: 53.33333
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: fba11a42-9767-40d0-8132-eea7affe67c1
+        accessor: 0
+    - rid: 5214929336822398989
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: d6e7752f-e97c-4ad7-aebb-1f7731878d25
+        computeOrder: 3
+        position:
+          serializedVersion: 2
+          x: 586.4058
+          y: -348.28995
+          width: 85.33331
+          height: 109.33333
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: c53a4534-12d2-4cc8-b36d-a8e63d27afc4
+        accessor: 1
+    - rid: 5214929336822398990
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: e781c510-6852-4f2f-9cd9-5f3c021e388e
+        computeOrder: 27
+        position:
+          serializedVersion: 2
+          x: 740.4059
+          y: -319.6233
+          width: 182
+          height: 53.33333
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: dc625a14-8b33-4822-ae02-6cc7e9f1e5b4
+        accessor: 0

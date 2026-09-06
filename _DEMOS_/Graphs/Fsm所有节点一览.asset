@@ -1,0 +1,2101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31390c44c9f3a3d40b424bf6821999a2, type: 3}
+  m_Name: "Fsm\u6240\u6709\u8282\u70B9\u4E00\u89C8"
+  m_EditorClassIdentifier: NodeGraphProcessor.Runtime::GraphProcessor.BaseGraph
+  nodes:
+  - rid: 5214929316377788881
+  - rid: 5214929316377788882
+  - rid: 5214929316377788883
+  - rid: 5214929316377788884
+  - rid: 5214929316377788885
+  - rid: 5214929316377788886
+  - rid: 5214929316377788887
+  - rid: 5214929316377788888
+  - rid: 5214929316377788889
+  - rid: 5214929316377788890
+  - rid: 5214929316377788891
+  - rid: 5214929316377788892
+  - rid: 5214929316377788893
+  - rid: 5214929316377788894
+  - rid: 5214929316377788895
+  - rid: 5214929316377788896
+  - rid: 5214929316377788897
+  - rid: 5214929316377788898
+  - rid: 5214929316377788899
+  - rid: 5214929316377788900
+  - rid: 5214929316377788901
+  - rid: 5214929316377788902
+  - rid: 5214929316377788903
+  - rid: 5214929316377788904
+  - rid: 5214929316377788906
+  - rid: 5214929316377788907
+  - rid: 5214929316377788908
+  - rid: 5214929316377788909
+  - rid: 5214929316377788910
+  - rid: 5214929319776223330
+  - rid: 5214929319776223331
+  - rid: 5214929319776223332
+  - rid: 5214929319776223333
+  - rid: 5214929319776223334
+  - rid: 5214929319776223335
+  - rid: 5214929319776223336
+  - rid: 5214929319776223337
+  - rid: 5214929319776223338
+  - rid: 5214929319776223339
+  - rid: 5214929319776223340
+  - rid: 5214929319776223341
+  - rid: 5214929319776223342
+  - rid: 5214929319776223343
+  - rid: 5214929319776223344
+  - rid: 5214929319776223345
+  - rid: 5214929319776223346
+  - rid: 5214929319776223347
+  - rid: 5214929319776223348
+  - rid: 5214929319776223349
+  - rid: 5214929319776223350
+  - rid: 5214929319776223351
+  - rid: 5214929319776223352
+  - rid: 5214929319776223353
+  - rid: 5214929319776223354
+  - rid: 5214929319776223355
+  - rid: 5214929319776223356
+  - rid: 5214929319776223357
+  - rid: 5214929319776223358
+  - rid: 5214929319776223359
+  - rid: 5214929319776223360
+  - rid: 5214929319776223361
+  - rid: 5214929319776223362
+  - rid: 5214929319776223363
+  - rid: 5214929319776223364
+  - rid: 5214929319776223365
+  - rid: 5214929336822399015
+  - rid: 5214929336822399016
+  - rid: 5214929336822399021
+  - rid: 5214929336822399022
+  - rid: 5214929336822399478
+  - rid: 5214929336822399515
+  - rid: 5214929336822399516
+  - rid: 5214929336822399517
+  - rid: 5214929336822399518
+  - rid: 5214929336822399519
+  - rid: 5214929336822399520
+  - rid: 5214929336822399521
+  - rid: 5734645928371683690
+  edges:
+  - GUID: 5ad64d25-d4ff-4b01-87ff-33c427de0087
+    owner: {fileID: 11400000}
+    inputNodeGUID: 8daddf73-52f3-4f6a-bb9c-2cb47943c815
+    outputNodeGUID: 62ffb639-719b-41d0-82ea-6fbaef8de0ac
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 64aa3d16-38db-4a87-a656-d655b1cef777
+    owner: {fileID: 11400000}
+    inputNodeGUID: 1466d0c8-c804-4856-877d-3c70b955cd5e
+    outputNodeGUID: 8daddf73-52f3-4f6a-bb9c-2cb47943c815
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: a6de2571-14cf-4aeb-8bf3-0b845d697c71
+    owner: {fileID: 11400000}
+    inputNodeGUID: 8dcf77c1-2f8e-4c07-9136-e7524bd53e75
+    outputNodeGUID: 62ffb639-719b-41d0-82ea-6fbaef8de0ac
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 7f72e49e-0639-4653-a375-9cf1c3152ec2
+    owner: {fileID: 11400000}
+    inputNodeGUID: 3e8b6cd7-44fc-4eac-9db4-c6d14d29e78c
+    outputNodeGUID: 62ffb639-719b-41d0-82ea-6fbaef8de0ac
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 54812670-57e2-48cc-931f-3ecea51b9f0b
+    owner: {fileID: 11400000}
+    inputNodeGUID: 46eb2336-eeea-4e7c-a151-0f6ec243f329
+    outputNodeGUID: 8dcf77c1-2f8e-4c07-9136-e7524bd53e75
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 6c052b57-5234-4080-af37-3f916e55c413
+    owner: {fileID: 11400000}
+    inputNodeGUID: 0836bb70-f743-4361-8576-9e30dc38890e
+    outputNodeGUID: 3e8b6cd7-44fc-4eac-9db4-c6d14d29e78c
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups:
+  - title: "\u72B6\u6001\u8282\u70B9"
+    color: {r: 1, g: 0.9215687, b: 0.015686275, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 809.05237
+      y: 65.787025
+      width: 171.33337
+      height: 87.33333
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 977ecd7a-1c43-4086-84c7-ecad9f3e2a4a
+    - 54d066f9-e311-42e5-b052-3d56b2d19710
+    - 5d78cf70-82a6-436d-bd5b-0ba8d0858eee
+    - 466d1b26-71a7-4a78-a5d6-99f369103c13
+  - title: "\u57FA\u672C\u7C7B\u578B\u8282\u70B9"
+    color: {r: 0.37254903, g: 0.61960787, b: 0.627451, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 1019.3333
+      y: 305.33334
+      width: 400
+      height: 200
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - c78e0c6e-3971-41d6-9ab0-ad31edd1b12f
+    - 28de97c8-184f-49b2-9da1-e796176f59de
+    - 91b0dac6-4294-419f-a6c8-3a9941dc3100
+    - d07292c6-bf1c-45ff-aede-4142d0f360a1
+    - 593280a9-2524-4c66-b81e-9a5df31a2caa
+  - title: "\u8F6C\u6362\u8282\u70B9"
+    color: {r: 0.6039216, g: 0.80392164, b: 0.19607845, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 676
+      y: 577.33325
+      width: 953.3334
+      height: 312.6667
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - ee3c19c9-1ab8-408b-8ba6-c15a1347b012
+    - 4592c826-78e9-4a41-8857-a731d654b218
+    - d0ea3917-f20b-4f61-8ab4-446299a43c59
+    - 9daca2c4-a72a-47e8-957d-76680b91fbed
+    - ad25db55-658e-4229-a5ea-cbb357d6dd38
+    - adf7b7c9-5e65-4a4c-a722-10464dd01526
+    - 37b836af-be6b-427f-b7d8-2789dd69cd24
+  - title: "\u4FE1\u606F\u8282\u70B9"
+    color: {r: 0.86274517, g: 0.078431375, b: 0.23529413, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 675.99994
+      y: 949.9336
+      width: 1006.6666
+      height: 260
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 185cd219-eb31-4bdc-9d6f-fcc1fbb10c74
+    - 75ce7b07-9974-467e-97cf-c8508cc2f877
+    - 7807ad80-ccc4-4206-b30c-78f63f0d7674
+    - 8ce691ed-07a6-46be-8cc9-c2b0cbccf3bd
+  - title: "\u5EF6\u65F6\u8282\u70B9"
+    color: {r: 0.043137256, g: 0.9568628, b: 0.043137256, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 657.89746
+      y: 1278.4403
+      width: 400
+      height: 200
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - ffd7f985-480f-441a-b23e-c2a5022776a7
+    - e3f79cba-5b9b-48a8-a6f8-ff4d11e5c056
+  - title: "\u8C03\u8BD5\u8282\u70B9"
+    color: {r: 0.94117653, g: 0.4784314, b: 0.94117653, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 1572.7537
+      y: 1301.4493
+      width: 400
+      height: 200
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - fae9f74d-a230-4df7-a0c7-d28dd65fc436
+  - title: "\u6761\u4EF6\u6EE1\u8DB3\u8282\u70B9"
+    color: {r: 0.627451, g: 0.1254902, b: 0.94117653, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 682.06683
+      y: 1586.5659
+      width: 219.33331
+      height: 87.333374
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 96ba7257-b1d2-466a-aa30-4ccfbf68670b
+  - title: "\u4E8B\u4EF6\u8282\u70B9"
+    color: {r: 0.9607844, g: 0.34901962, b: 0.19607845, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 1267.9962
+      y: 1629.9332
+      width: 171.33337
+      height: 87.333374
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 40161011-143f-4e3a-827b-e40e5f53bd95
+  - title: "\u6BD4\u8F83\u6761\u4EF6\u8282\u70B9"
+    color: {r: 0.627451, g: 0.1254902, b: 0.94117653, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 670.959
+      y: 1862.6481
+      width: 219.33331
+      height: 87.333374
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 3584a72f-2872-4556-bf20-131f22d9188c
+    - 82cf3166-ddf1-49e2-8261-c8ae4ed3678f
+  - title: "\u8F93\u5165\u76D1\u542C\u6761\u4EF6\u8282\u70B9"
+    color: {r: 0.627451, g: 0.1254902, b: 0.94117653, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 698.2029
+      y: 2131.1885
+      width: 267.3333
+      height: 87.33325
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 98f8ed77-1a07-486a-9901-1c561f19aa72
+    - 148da5f9-9b1d-4cfb-9c5e-3207f9f4fa7e
+    - d8632b38-44a9-4c96-b7be-a7e65a9e826c
+  - title: "\u7269\u7406\u68C0\u6D4B\u8282\u70B9"
+    color: {r: 0.627451, g: 0.1254902, b: 0.94117653, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 686.9878
+      y: 2430.9072
+      width: 219.33331
+      height: 87.33325
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 36cab1d5-af1d-4d73-8c9f-bf6f5d5bd7d8
+    - f2569067-7e93-4531-b618-94f936626ba1
+    - ee8b7d45-2647-417d-b9ce-55b5a7294989
+    - 21464a51-fd00-4d15-9f2a-99383eb9cd07
+    - eb31f893-f52f-43c2-8697-a33f4441bd48
+    - e100a807-cfae-4b94-b296-626f51271e30
+    - edac5012-892e-463b-af14-96c7173ea0ff
+  - title: "\u903B\u8F91\u8282\u70B9"
+    color: {r: 0.25882354, g: 0.25882354, b: 1, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 1528.0004
+      y: 1847.7573
+      width: 171.33337
+      height: 86.666626
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 1699a620-b0af-4cc8-ba49-8b2adc8bd024
+    - bf91c82c-fcc0-4b53-86e6-727d1e1d1aae
+    - 8e4beefa-18ff-4e67-9e8a-b1d47110d238
+    - 4ac6610c-c08a-40b7-bb44-6d32e624fc18
+  - title: "\u8BA1\u7B97\u8282\u70B9"
+    color: {r: 0.81568635, g: 0.1254902, b: 0.5647059, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 2091.3516
+      y: 54.011684
+      width: 171.3335
+      height: 87.333336
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - ec0eeaad-c39e-4816-b73c-d3b0c117cec2
+    - f2edd1e5-7915-4c28-bdb4-70101ab40acb
+    - afc1d9b4-97cb-45ac-b0f4-2dd955daaa22
+    - 81251eaf-bffc-4507-a2d9-0bcfb64758e9
+    - 1867a752-1fde-48ab-8c67-256c6aa63cd7
+    - ce1557ef-5f44-4763-8694-e055d446c9bf
+    - 225f2b88-9dbb-4e61-af54-aca9508d7f07
+    - 4b409343-1334-4c53-a6fc-79998e24e663
+    - a848f48f-0996-462e-bee3-6d975edb414d
+    - a5f85776-f467-45c1-a977-04009011a71d
+    - fc0a1ac8-56a2-43ea-a5ee-2239ca45e712
+    - 4e058ccc-6fe0-46b3-bc71-21686addc5ef
+    - 90b37481-9845-4a4b-b4f9-b7b99eec09db
+    - f41aa6c0-5383-49ea-9c18-a08882fa3e3e
+    - 73b1dd13-67bb-408f-a581-3c9e95ad01ab
+  - title: "\u5411\u91CF\u7EC4\u5408\u8282\u70B9"
+    color: {r: 0.8235295, g: 0.7058824, b: 0.54901963, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 2083.4958
+      y: 693.96606
+      width: 219.3335
+      height: 87.333374
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - f3e8af46-ee2b-4a36-b722-c052b1ea250d
+    - 4a919231-13f5-4bec-9c44-3dbef006d39f
+  - title: "\u5B57\u7B26\u4E32\u5904\u7406\u8282\u70B9"
+    color: {r: 0.8235295, g: 0.7058824, b: 0.54901963, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 2065.4614
+      y: 990.96436
+      width: 243.33325
+      height: 87.33331
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 4e52c5b7-9b3a-4e66-8d2c-5314fb870c1f
+    - 61767b17-313e-4a9e-914f-f677b6a45429
+    - c1f051f9-9492-480e-9daf-8736a23b168e
+    - ee5a4b3d-0d7a-4b3e-8a14-4e6d41595ba8
+  - title: "\u989C\u8272\u5904\u7406\u8282\u70B9"
+    color: {r: 0.8235295, g: 0.7058824, b: 0.54901963, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 3000.5256
+      y: 692.5697
+      width: 219.33325
+      height: 87.33331
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 5e90c312-3eb3-476c-9ef4-362af35a677c
+    - 4e8581da-ab93-461f-8324-d3e6cf5219aa
+  - title: "Json\u6570\u636E\u5904\u7406\u8282\u70B9"
+    color: {r: 0.8235295, g: 0.7058824, b: 0.54901963, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 2087.6335
+      y: 1279.1667
+      width: 272.66675
+      height: 87.333374
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - f5c34c07-2992-4ef5-9db9-3430f28ea526
+    - 31b6e429-0722-4754-8f8b-17b48bea611f
+  - title: "\u6D41\u7A0B\u63A7\u5236\u8282\u70B9"
+    color: {r: 0.27450982, g: 0.50980395, b: 0.7058824, a: 0.101960786}
+    position:
+      serializedVersion: 2
+      x: 2254.1558
+      y: 1846.3334
+      width: 219.33325
+      height: 87.333374
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - f6fcfcd2-4e21-4b30-8d1f-a81fe9fea7a5
+    - 33670150-dbc6-4f23-9ee1-5bf9a0b6708c
+    - 4aebd775-ad72-4cdb-bcbe-fc6fdcb2cc5a
+  - title: "\u53C2\u6570\u8282\u70B9"
+    color: {r: 0, g: 0, b: 0, a: 0.3}
+    position:
+      serializedVersion: 2
+      x: 924.058
+      y: -191.88402
+      width: 400
+      height: 200
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - e45a0d0a-5c90-4324-a400-d1a3caebb080
+    - 71cca7e8-084f-4f0c-a182-21279066f66f
+  - title: "\u5206\u652F\u987A\u5E8F\u8282\u70B9\u4F7F\u7528\u793A\u4F8B"
+    color: {r: 0, g: 0, b: 0, a: 0.3}
+    position:
+      serializedVersion: 2
+      x: 2247.2751
+      y: 2102.026
+      width: 315.33325
+      height: 87.33325
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 62ffb639-719b-41d0-82ea-6fbaef8de0ac
+    - 8daddf73-52f3-4f6a-bb9c-2cb47943c815
+    - 1466d0c8-c804-4856-877d-3c70b955cd5e
+    - 8dcf77c1-2f8e-4c07-9136-e7524bd53e75
+    - 46eb2336-eeea-4e7c-a151-0f6ec243f329
+    - 3e8b6cd7-44fc-4eac-9db4-c6d14d29e78c
+    - 0836bb70-f743-4361-8576-9e30dc38890e
+  stackNodes: []
+  pinnedElements:
+  - position:
+      serializedVersion: 2
+      x: 12.666664
+      y: 29.333336
+      width: 209.33331
+      height: 213.33331
+    opened: 1
+    editorType:
+      serializedType: GraphProcessor.ExposedParameterView, com.alelievr.NodeGraphProcessor.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  exposedParameters:
+  - rid: 5214929336822399017
+  stickyNotes:
+  - position:
+      serializedVersion: 2
+      x: 418
+      y: 85.333336
+      width: 222
+      height: 107.333336
+    title: "\u72B6\u6001\u8282\u70B9"
+    content: "\u72B6\u6001\u8282\u70B9\u662F\u8FD9\u4E2A\u7CFB\u7EDF\u7684\u5E95\u5C42\u903B\u8F91\uFF0C\u6240\u6709\u7684\u903B\u8F91\u9A71\u52A8\u90FD\u9700\u8981\u4F9D\u636E\u72B6\u6001\u8282\u70B9\u6765\u8FD0\u884C\u3002\n`\u8FDB\u5165\u4EFB\u610F\u72B6\u6001`\u8282\u70B9\u4EC5\u5F53\u5207\u6362\u72B6\u6001\u65F6\u4F1A\u89E6\u53D1\u4E00\u904D\u3002"
+  - position:
+      serializedVersion: 2
+      x: 420.49274
+      y: 330.89856
+      width: 222.00003
+      height: 100
+    title: "\u57FA\u672C\u7C7B\u578B\u8282\u70B9"
+    content: "\u8FD9\u4E9B\u8282\u70B9\u63D0\u4F9B\u6700\u57FA\u7840\u7684\u6570\u503C\u5E38\u91CF\u3002"
+  - position:
+      serializedVersion: 2
+      x: 419.9987
+      y: 639.51355
+      width: 221.99997
+      height: 100
+    title: "\u8F6C\u6362\u8282\u70B9"
+    content: "\u7528\u4E8E\u7C7B\u578B\u8F6C\u6362\uFF0C\u65E0\u6CD5\u8F6C\u6362\u65F6\u4F1A\u4F7F\u7528\u9ED8\u8BA4\u503C\u3002"
+  - position:
+      serializedVersion: 2
+      x: 422.6087
+      y: 1000.2029
+      width: 222.00003
+      height: 100.00006
+    title: "\u4FE1\u606F\u8282\u70B9"
+    content: "\u63D0\u4F9B\u5168\u5C40\u4FE1\u606F\u3002\n\u540E\u9762\u4E24\u4E2A`\u672C\u5730`\u8282\u70B9\u7684\u672C\u5730\u6307\u7684\u662FFsm\u64AD\u653E\u5668\u7EC4\u4EF6\u6240\u5728\u7269\u4F53\u3002"
+  - position:
+      serializedVersion: 2
+      x: 420.66666
+      y: 1330.6666
+      width: 222.00003
+      height: 150
+    title: "\u5EF6\u65F6\u8282\u70B9"
+    content: "\u5EF6\u65F6\u8282\u70B9\u5728\u8BA1\u65F6\u7684\u65F6\u5019\uFF0C\u5176\u6267\u884C\u94FE\u4F1A\u88AB\u963B\u585E\uFF0C\u76F4\u5230\u8BA1\u65F6\u5B8C\u6210\u3002\n\u5F53Is
+      Break\u4E3A\u771F\u65F6\u53EF\u4EE5\u6253\u7834\u8BA1\u65F6\u3002\nIsBackground\u53EF\u4EE5\u4F7F\u8BE5\u8282\u70B9\u7EBF\u8DEF\u65E0\u89C6\u72B6\u6001\u5207\u6362\u800C\u8FD0\u884C\uFF0C\u4E5F\u5C31\u662F\u8BF4\uFF0C\u5F53\u4F7F\u7528GoToState\u5207\u6362\u72B6\u6001\u65F6\uFF0C\u6B64\u7EBF\u8DEF\u4ECD\u7136\u80FD\u8FD0\u884C\u3002"
+  - position:
+      serializedVersion: 2
+      x: 1251.9001
+      y: 1328.6666
+      width: 222
+      height: 100
+    title: "\u8C03\u8BD5\u8282\u70B9"
+    content: "\u5728Console\u9762\u677F\u4E2D\u8FDB\u884C\u5B57\u7B26\u4E32\u8F93\u51FA\u3002Object\u7AEF\u53E3\u53EF\u4EE5\u63A5\u5165\u4EFB\u610F\u6570\u636E\u3002"
+  - position:
+      serializedVersion: 2
+      x: 420.66666
+      y: 1629.2601
+      width: 222.00003
+      height: 100
+    title: "\u6761\u4EF6\u6EE1\u8DB3\u8282\u70B9"
+    content: "\u6761\u4EF6\u6EE1\u8DB3\u8282\u70B9\u662F\u552F\u4E00\u53EF\u4EE5\u963B\u585E\u6267\u884C\u94FE\u7684\u6761\u4EF6\u8282\u70B9\u3002\u6761\u4EF6Condition\u5141\u8BB8\u591A\u8FDE\uFF0CIs
+      And\u7528\u4E8E\u63A7\u5236\u591A\u8FDE\u7684\u6761\u4EF6\u662F\u5426\u662F`\u4E0E`\u903B\u8F91\uFF0C\u5426\u5219\u4F7F\u7528`\u6216`\u903B\u8F91\u8FDB\u884C\u5224\u65AD\u3002"
+  - position:
+      serializedVersion: 2
+      x: 957.3333
+      y: 1625.3334
+      width: 221.99994
+      height: 100
+    title: "\u4E8B\u4EF6\u8282\u70B9"
+    content: "\u4E8B\u4EF6\u8282\u70B9\u53EF\u4EE5\u89E6\u53D1Fsm\u64AD\u653E\u5668\u7EC4\u4EF6\u7684fsmEvent\u4E8B\u4EF6\uFF0CMessage\u662F\u7528\u4E8E\u4F20\u53C2\u7684\u5B57\u7B26\u4E32\uFF0C\u7528\u4E8E\u533A\u5206\u4E8B\u4EF6\uFF0C\u591A\u6570\u60C5\u51B5\u4E0B\u88AB\u7528\u4F5C\u4E8B\u4EF6\u540D\u3002"
+  - position:
+      serializedVersion: 2
+      x: 419.99997
+      y: 1898.4348
+      width: 222
+      height: 100
+    title: "\u6BD4\u8F83\u6761\u4EF6\u8282\u70B9"
+    content: "`\u7B49\u4E8E`\u8282\u70B9\u53EF\u4EE5\u5BF9\u4E24\u4E2A\u4EFB\u610F\u503C\u8FDB\u884C\u6BD4\u8F83\u3002`\u6570\u5B57\u6BD4\u8F83`\u8282\u70B9\u53EF\u4EE5\u5BF9\u4E24\u4E2A\u6570\u5B57\u8FDB\u884C\u6BD4\u8F83\u3002"
+  - position:
+      serializedVersion: 2
+      x: 417.33334
+      y: 2179.3333
+      width: 221.99997
+      height: 116.66675
+    title: "\u8F93\u5165\u76D1\u542C\u6761\u4EF6\u8282\u70B9"
+    content: "\u7528\u4E8E\u5BF9\u786C\u4EF6\u8F93\u5165\u8FDB\u884C\u76D1\u542C\u5224\u65AD\u3002\u5F53\u5F53\u524D\u5E27\u89E6\u53D1\u65F6\uFF0C\u8F93\u51FA\u7AEF\u53E3\u4F1A\u8FD4\u56DE\u771F\u3002\n`\u8F93\u5165\u76D1\u542C`\u8282\u70B9\u4E13\u95E8\u7528\u4E8E\u517C\u5BB9Unity\u7684InputSystem\u6A21\u5757\u3002\n\u4E00\u822C\u642D\u914D`\u6761\u4EF6\u6EE1\u8DB3`\u8282\u70B9\u4F7F\u7528"
+  - position:
+      serializedVersion: 2
+      x: 418
+      y: 2472
+      width: 222
+      height: 286
+    title: "\u7269\u7406\u68C0\u6D4B\u8282\u70B9"
+    content: "\u7269\u7406\u68C0\u6D4B\u8282\u70B9\u4E3B\u8981\u5206\u4E3A\u4E24\u7C7B\uFF1A\u78B0\u649E\u68C0\u6D4B\u4E0E\u5C04\u7EBF\u68C0\u6D4B\u3002\n\n\u78B0\u649E\u68C0\u6D4B\uFF1A\n\u78B0\u649E\u548C\u89E6\u53D1\u8282\u70B9\u90FD\u6709`\u8FDC\u7A0B`\u53D8\u4F53\uFF0C\u9700\u8981\u642D\u914DFsmCollisionProxy\u7EC4\u4EF6\u4F7F\u7528\u3002\u8FDC\u7A0B\u8282\u70B9\u4F1A\u68C0\u6D4B\u6240\u6709\u6DFB\u52A0\u4E86\u8BE5\u7EC4\u4EF6\u7684\u78B0\u649E\u7BB1\u3002\u975E\u8FDC\u7A0B\u7684\u7248\u672C\u7684\u78B0\u649E\u7BB1\u9ED8\u8BA4\u4E3AFsm\u64AD\u653E\u5668\u7EC4\u4EF6\u6240\u5728\u7269\u4F53\u7684\u78B0\u649E\u7BB1\u3002\n\u5F53\u4F11\u7720\u9608\u503C\u4E3A0\u65F6\uFF0C\u78B0\u649E\u7BB1\u4E0D\u4F1A\u4F11\u7720\u3002\n\n\u5C04\u7EBF\u68C0\u6D4B\uFF1A\n\u91CD\u53E0\u68C0\u6D4B\u4E0E\u78B0\u649E\u68C0\u6D4B\u7C7B\u4F3C\uFF0C\u4F46\u662F\u662F\u6BCF\u5E27Update\u8C03\u7528\u7684\uFF0C\u6027\u80FD\u4E0D\u5982\u78B0\u649E\u68C0\u6D4B\uFF0C\u6240\u4EE5\u8BBE\u7F6E\u4E86Refresh
+      Rate\u5237\u65B0\u7387\u6765\u9650\u5236\u66F4\u65B0\u901F\u7387\u3002"
+  - position:
+      serializedVersion: 2
+      x: 1248.9332
+      y: 1899.3335
+      width: 222
+      height: 100
+    title: "\u903B\u8F91\u8282\u70B9"
+    content: "\u903B\u8F91\u8282\u70B9\u7528\u4E8E\u5BF9\u6761\u4EF6\u5E03\u5C14\u503C\u8FDB\u884C\u8BA1\u7B97\u3002"
+  - position:
+      serializedVersion: 2
+      x: 1826.9003
+      y: 103.59999
+      width: 222
+      height: 99.99999
+    title: "\u8BA1\u7B97\u8282\u70B9"
+    content: "\u8BA1\u7B97\u8282\u70B9\u5206\u4E3A`\u6D6E\u70B9`\u4E0E`\u5411\u91CF`\u4E24\u79CD\u7C7B\u578B\u3002"
+  - position:
+      serializedVersion: 2
+      x: 1824
+      y: 748
+      width: 222
+      height: 100
+    title: "\u5411\u91CF\u7EC4\u5408\u8282\u70B9"
+    content: "\u7528\u4E8E\u62FC\u63A5\u5411\u91CF\u3002"
+  - position:
+      serializedVersion: 2
+      x: 1820.9523
+      y: 1037.0479
+      width: 222
+      height: 100
+    title: "\u5B57\u7B26\u4E32\u5904\u7406\u8282\u70B9"
+    content: "\u7528\u4E8E\u63D0\u53D6\u4E0E\u5199\u5165\u5B57\u7B26\u4E32\u4FE1\u606F\u3002"
+  - position:
+      serializedVersion: 2
+      x: 2734.412
+      y: 748
+      width: 222
+      height: 100
+    title: "\u989C\u8272\u5904\u7406\u8282\u70B9"
+    content: "\u7528\u4E8E\u5904\u7406\u989C\u8272\u4FE1\u606F\u3002"
+  - position:
+      serializedVersion: 2
+      x: 1820.6667
+      y: 1329.3334
+      width: 222
+      height: 100
+    title: "Json\u6570\u636E\u5904\u7406\u8282\u70B9"
+    content: "\u7528\u4E8E\u63D0\u53D6\u4E0E\u5199\u5165Json\u5B57\u7B26\u4E32\u4FE1\u606F\u3002\u53EF\u4EE5\u5C06Json\u5B57\u7B26\u4E32\u5199\u5165\u53D8\u91CF\uFF08\u6216\u8005\u4E8B\u4EF6\u64AD\u62A5\uFF09\uFF0C\u7136\u540E\u5B9E\u73B0\u5916\u754C\u901A\u4FE1\u3002"
+  - position:
+      serializedVersion: 2
+      x: 2734.2083
+      y: 1328.9132
+      width: 191.33325
+      height: 293.33337
+    title: "Json\u683C\u5F0F\u5316\u793A\u4F8B"
+    content: "{\r\n    \"INT\": 8,\r\n    \"FLOAT\": 3.14159,\r\n    \"BOOL\": true,\r\n   
+      \"STRING\": \"helloworld\",\r\n    \"VECTOR\": {\r\n        \"x\": 1,\r\n       
+      \"y\": 2,\r\n        \"z\": 3,\r\n        \"w\": 4\r\n    },\r\n    \"COLOR\":
+      {\r\n        \"r\": 0.9811321,\r\n        \"g\": 0.5023337,\r\n        \"b\":
+      0.126498088,\r\n        \"a\": 1\r\n    }\r\n}"
+  - position:
+      serializedVersion: 2
+      x: 1981.6097
+      y: 1900.2887
+      width: 221.99988
+      height: 100
+    title: "\u6D41\u7A0B\u63A7\u5236\u8282\u70B9"
+    content: "Branch\u7528\u4E8E\u5BF9\u6570\u636E\u7BA1\u7EBF\u8FDB\u884C\u5206\u6D41\u3002\nIfElse\u7528\u4E8E\u5BF9\u6267\u884C\u7BA1\u7EBF\u8FDB\u884C\u5206\u6D41\u3002\nNode
+      Order\u7528\u4E8E\u63A7\u5236\u591A\u6761\u5E73\u884C\u7BA1\u7EBF\u7684\u6267\u884C\u987A\u5E8F\uFF0C\u6570\u503C\u8D8A\u4F4E\u8D8A\u5148\u6267\u884C\u3002"
+  - position:
+      serializedVersion: 2
+      x: 419.83618
+      y: -143.8689
+      width: 222.00003
+      height: 100
+    title: "\u53C2\u6570\u8282\u70B9"
+    content: "\u901A\u8FC7\u53C2\u6570\u9762\u677F\u62D6\u62FD\u521B\u5EFA\u3002"
+  showNodeRidLabel: 1
+  nodeInspectorReference: {fileID: 0}
+  position: {x: 619.3333, y: 142, z: 0}
+  scale: {x: 0.375937, y: 0.375937, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5214929316377788881
+      type: {class: NEntryState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 977ecd7a-1c43-4086-84c7-ecad9f3e2a4a
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: 701.3333
+          y: 100.66667
+          width: 158
+          height: 77.333336
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+    - rid: 5214929316377788882
+      type: {class: NGoToState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 54d066f9-e311-42e5-b052-3d56b2d19710
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 975.33325
+          y: 100.66667
+          width: 159.33331
+          height: 101.333336
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        state: Default
+    - rid: 5214929316377788883
+      type: {class: NInState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 5d78cf70-82a6-436d-bd5b-0ba8d0858eee
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: 1184
+          y: 100.66667
+          width: 187.33337
+          height: 98.00001
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        state: Default
+    - rid: 5214929316377788884
+      type: {class: NVector, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: c78e0c6e-3971-41d6-9ab0-ad31edd1b12f
+        computeOrder: 3
+        position:
+          serializedVersion: 2
+          x: 1266.6666
+          y: 334.862
+          width: 156
+          height: 160.00003
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        valueX: 0
+        valueY: 0
+        valueZ: 0
+        valueW: 0
+        outputValue: {x: 0, y: 0, z: 0, w: 0}
+    - rid: 5214929316377788885
+      type: {class: NString, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 28de97c8-184f-49b2-9da1-e796176f59de
+        computeOrder: 4
+        position:
+          serializedVersion: 2
+          x: 1089.3335
+          y: 334.862
+          width: 138
+          height: 146
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        value: 
+        outputValue: 
+    - rid: 5214929316377788886
+      type: {class: NInteger, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 91b0dac6-4294-419f-a6c8-3a9941dc3100
+        computeOrder: 5
+        position:
+          serializedVersion: 2
+          x: 701.3333
+          y: 334.862
+          width: 156
+          height: 98
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        value: 0
+        outputValue: 0
+    - rid: 5214929316377788887
+      type: {class: NFloat, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: d07292c6-bf1c-45ff-aede-4142d0f360a1
+        computeOrder: 6
+        position:
+          serializedVersion: 2
+          x: 897.3334
+          y: 334.862
+          width: 156.00006
+          height: 98
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        value: 0
+        outputValue: 0
+    - rid: 5214929316377788888
+      type: {class: NColor, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 593280a9-2524-4c66-b81e-9a5df31a2caa
+        computeOrder: 7
+        position:
+          serializedVersion: 2
+          x: 1466.6666
+          y: 334.862
+          width: 190.66675
+          height: 110
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        value: {r: 0, g: 0, b: 0, a: 1}
+        outputValue: {r: 0, g: 0, b: 0, a: 1}
+    - rid: 5214929316377788889
+      type: {class: NConvertToVector, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: ee3c19c9-1ab8-408b-8ba6-c15a1347b012
+        computeOrder: 8
+        position:
+          serializedVersion: 2
+          x: 701.3333
+          y: 637.448
+          width: 153.33337
+          height: 77.33331
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        result: {x: 0, y: 0, z: 0, w: 0}
+    - rid: 5214929316377788890
+      type: {class: NConvertToString, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 4592c826-78e9-4a41-8857-a731d654b218
+        computeOrder: 9
+        position:
+          serializedVersion: 2
+          x: 897.33325
+          y: 637.448
+          width: 156.00006
+          height: 98
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        decimalPlaces: 2
+        result: 
+    - rid: 5214929316377788891
+      type: {class: NConvertToBool, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: d0ea3917-f20b-4f61-8ab4-446299a43c59
+        computeOrder: 10
+        position:
+          serializedVersion: 2
+          x: 1089.3333
+          y: 637.448
+          width: 140
+          height: 77.33331
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        result: 0
+    - rid: 5214929316377788892
+      type: {class: NConvertToNumber, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 9daca2c4-a72a-47e8-957d-76680b91fbed
+        computeOrder: 11
+        position:
+          serializedVersion: 2
+          x: 1266.6666
+          y: 637.448
+          width: 141.33337
+          height: 77.33331
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        result: 0
+    - rid: 5214929316377788893
+      type: {class: NConvertToColor, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: ad25db55-658e-4229-a5ea-cbb357d6dd38
+        computeOrder: 12
+        position:
+          serializedVersion: 2
+          x: 1451.9999
+          y: 637.448
+          width: 152
+          height: 96
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        isNormalized: 1
+        result: {r: 1, g: 1, b: 1, a: 1}
+    - rid: 5214929316377788894
+      type: {class: NConvertVectorToColor, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: adf7b7c9-5e65-4a4c-a722-10464dd01526
+        computeOrder: 13
+        position:
+          serializedVersion: 2
+          x: 1256
+          y: 767.448
+          width: 152
+          height: 96
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        isNormalized: 1
+        vec: {x: 0, y: 0, z: 0, w: 0}
+        result: {r: 0, g: 0, b: 0, a: 1}
+    - rid: 5214929316377788895
+      type: {class: NConvertColorToVector, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 37b836af-be6b-427f-b7d8-2789dd69cd24
+        computeOrder: 14
+        position:
+          serializedVersion: 2
+          x: 897.33325
+          y: 767.448
+          width: 152.00006
+          height: 96
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        isNormalized: 1
+        col: {r: 0, g: 0, b: 0, a: 1}
+        result: {x: 0, y: 0, z: 0, w: 0}
+    - rid: 5214929316377788896
+      type: {class: NCurrentState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 185cd219-eb31-4bdc-9d6f-fcc1fbb10c74
+        computeOrder: 15
+        position:
+          serializedVersion: 2
+          x: 701.3333
+          y: 1004
+          width: 171.33337
+          height: 77.33331
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        currentState: 
+    - rid: 5214929316377788897
+      type: {class: NLocalTransform, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 75ce7b07-9974-467e-97cf-c8508cc2f877
+        computeOrder: 16
+        position:
+          serializedVersion: 2
+          x: 1144.6667
+          y: 1004
+          width: 211.33337
+          height: 143.99994
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        isRelative: 0
+        tPosition: {x: 0, y: 0, z: 0, w: 0}
+        tRotation: {x: 0, y: 0, z: 0, w: 0}
+        tScale: {x: 0, y: 0, z: 0, w: 0}
+    - rid: 5214929316377788898
+      type: {class: NLocalGameObject, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 7807ad80-ccc4-4206-b30c-78f63f0d7674
+        computeOrder: 17
+        position:
+          serializedVersion: 2
+          x: 1406
+          y: 1004
+          width: 226.66663
+          height: 173.33331
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        goName: 
+        goTag: 
+        goLayer: 0
+        goIsStatic: 0
+        goSceneName: 
+    - rid: 5214929316377788899
+      type: {class: NGameTime, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 8ce691ed-07a6-46be-8cc9-c2b0cbccf3bd
+        computeOrder: 18
+        position:
+          serializedVersion: 2
+          x: 930
+          y: 1004
+          width: 159.33337
+          height: 149.33331
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        gameTime: 0
+        gameFrames: 0
+        gameTimeScale: 0
+        deltaTime: 0
+    - rid: 5214929316377788900
+      type: {class: NWaitFrames, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: ffd7f985-480f-441a-b23e-c2a5022776a7
+        computeOrder: 19
+        position:
+          serializedVersion: 2
+          x: 698.6667
+          y: 1326.6666
+          width: 198.66663
+          height: 149.33337
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        progress: 0
+        frames: 0
+        isBreak: 0
+        isBackground: 0
+    - rid: 5214929316377788901
+      type: {class: NWaitSeconds, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: e3f79cba-5b9b-48a8-a6f8-ff4d11e5c056
+        computeOrder: 20
+        position:
+          serializedVersion: 2
+          x: 973.3333
+          y: 1326.6666
+          width: 198.66669
+          height: 149.33337
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        progress: 0
+        seconds: 0
+        isBreak: 0
+        isBackground: 0
+    - rid: 5214929316377788902
+      type: {class: NDebugLog, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: fae9f74d-a230-4df7-a0c7-d28dd65fc436
+        computeOrder: 21
+        position:
+          serializedVersion: 2
+          x: 1536
+          y: 1309.3333
+          width: 193.33337
+          height: 206
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        text: 
+        logType: 3
+    - rid: 5214929316377788903
+      type: {class: NPerformed, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 96ba7257-b1d2-466a-aa30-4ccfbf68670b
+        computeOrder: 22
+        position:
+          serializedVersion: 2
+          x: 701.3333
+          y: 1624
+          width: 176
+          height: 120
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        condition: 0
+        isAnd: 1
+    - rid: 5214929316377788904
+      type: {class: NEventInvoke, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 40161011-143f-4e3a-827b-e40e5f53bd95
+        computeOrder: 23
+        position:
+          serializedVersion: 2
+          x: 1267.3334
+          y: 1624
+          width: 174.66663
+          height: 101.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        message: 
+    - rid: 5214929316377788906
+      type: {class: NIsEqualTo, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 3584a72f-2872-4556-bf20-131f22d9188c
+        computeOrder: 24
+        position:
+          serializedVersion: 2
+          x: 701.3333
+          y: 1898.0002
+          width: 133.33337
+          height: 101.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        outputValue: 0
+    - rid: 5214929316377788907
+      type: {class: NCompareNumber, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 82cf3166-ddf1-49e2-8261-c8ae4ed3678f
+        computeOrder: 25
+        position:
+          serializedVersion: 2
+          x: 923.3333
+          y: 1898.0002
+          width: 195.33331
+          height: 122
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        function: 0
+        a: 0
+        b: 0
+        result: 0
+    - rid: 5214929316377788908
+      type: {class: NListenInputMouse, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 98f8ed77-1a07-486a-9901-1c561f19aa72
+        computeOrder: 26
+        position:
+          serializedVersion: 2
+          x: 701.3333
+          y: 2173.3333
+          width: 202.66669
+          height: 146
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        mouseButton: 0
+        onMouseDown: 0
+        onMouseUp: 0
+        onMouse: 0
+    - rid: 5214929316377788909
+      type: {class: NListenInput, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 148da5f9-9b1d-4cfb-9c5e-3207f9f4fa7e
+        computeOrder: 27
+        position:
+          serializedVersion: 2
+          x: 1226
+          y: 2173.3333
+          width: 216
+          height: 125.333496
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        actionMap: 
+        actionName: 
+        onStarted: 0
+        onPerformed: 0
+        onCanceled: 0
+    - rid: 5214929316377788910
+      type: {class: NListenInputKey, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: d8632b38-44a9-4c96-b7be-a7e65a9e826c
+        computeOrder: 28
+        position:
+          serializedVersion: 2
+          x: 961.3333
+          y: 2173.3333
+          width: 193.33331
+          height: 146
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        keyCode: 32
+        onKeyDown: 0
+        onKeyUp: 0
+        onKey: 0
+    - rid: 5214929319776223330
+      type: {class: NCollisionDetect, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 36cab1d5-af1d-4d73-8c9f-bf6f5d5bd7d8
+        computeOrder: 29
+        position:
+          serializedVersion: 2
+          x: 701.3333
+          y: 2470.8406
+          width: 278.6667
+          height: 310.66675
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        selfRBDSleepThreshold: 0.005
+        selfRBG2DSleepMode: 1
+        passLayerMask: -1
+        onCollisionEnter: 0
+        onCollisionStay: 0
+        onCollisionExit: 0
+        onCollisionEnter2D: 0
+        onCollisionStay2D: 0
+        onCollisionExit2D: 0
+        enterObjectCount: 0
+        stayObjectCount: 0
+        exitObjectCount: 0
+    - rid: 5214929319776223331
+      type: {class: NCollisionProxyDetect, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: f2569067-7e93-4531-b618-94f936626ba1
+        computeOrder: 30
+        position:
+          serializedVersion: 2
+          x: 1044
+          y: 2470.8406
+          width: 278.66663
+          height: 269.3335
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        proxyId: 
+        passLayerMask: -1
+        onCollisionEnter: 0
+        onCollisionStay: 0
+        onCollisionExit: 0
+        onCollisionEnter2D: 0
+        onCollisionStay2D: 0
+        onCollisionExit2D: 0
+        enterObjectCount: 0
+        stayObjectCount: 0
+        exitObjectCount: 0
+    - rid: 5214929319776223332
+      type: {class: NTriggerDetect, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: ee8b7d45-2647-417d-b9ce-55b5a7294989
+        computeOrder: 31
+        position:
+          serializedVersion: 2
+          x: 1381.3334
+          y: 2470.8406
+          width: 272.66663
+          height: 310.66675
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        selfRBDSleepThreshold: 0.005
+        selfRBG2DSleepMode: 1
+        passLayerMask: -1
+        onTriggerEnter: 0
+        onTriggerStay: 0
+        onTriggerExit: 0
+        onTriggerEnter2D: 0
+        onTriggerStay2D: 0
+        onTriggerExit2D: 0
+        enterObjectCount: 0
+        stayObjectCount: 0
+        exitObjectCount: 0
+    - rid: 5214929319776223333
+      type: {class: NTriggerProxyDetect, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 21464a51-fd00-4d15-9f2a-99383eb9cd07
+        computeOrder: 32
+        position:
+          serializedVersion: 2
+          x: 1716.6667
+          y: 2470.8406
+          width: 272.66675
+          height: 269.3335
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        proxyId: 
+        passLayerMask: -1
+        onTriggerEnter: 0
+        onTriggerStay: 0
+        onTriggerExit: 0
+        onTriggerEnter2D: 0
+        onTriggerStay2D: 0
+        onTriggerExit2D: 0
+        enterObjectCount: 0
+        stayObjectCount: 0
+        exitObjectCount: 0
+    - rid: 5214929319776223334
+      type: {class: NRayDetect, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: eb31f893-f52f-43c2-8697-a33f4441bd48
+        computeOrder: 33
+        position:
+          serializedVersion: 2
+          x: 861.3333
+          y: 2822.1738
+          width: 272.00006
+          height: 240
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        showDebug: 0
+        detectRefreshRate: 8
+        origin: {x: 0, y: 0, z: 0, w: 0}
+        direction: {x: 1, y: 0, z: 0, w: 0}
+        distance: 100
+        relative: 1
+        layerMask: -1
+        includeChildren: 0
+        didHit: 0
+        hitPoint: {x: 0, y: 0, z: 0, w: 0}
+        hitNormal: {x: 0, y: 0, z: 0, w: 0}
+        hitDistance: 0
+        hitObjectName: 
+    - rid: 5214929319776223335
+      type: {class: NOverlapBoxDetect, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: e100a807-cfae-4b94-b296-626f51271e30
+        computeOrder: 34
+        position:
+          serializedVersion: 2
+          x: 1322.6666
+          y: 2822.1738
+          width: 299.33337
+          height: 216
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        showDebug: 0
+        detectRefreshRate: 8
+        origin: {x: 0, y: 0, z: 0, w: 0}
+        size: {x: 1, y: 1, z: 1, w: 1}
+        relative: 1
+        layerMask: -1
+        includeChildren: 0
+        didOverlap: 0
+        overlapObjectCount: 0
+    - rid: 5214929319776223336
+      type: {class: NOverlapSphereDetect, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: edac5012-892e-463b-af14-96c7173ea0ff
+        computeOrder: 35
+        position:
+          serializedVersion: 2
+          x: 1804
+          y: 2822.1738
+          width: 299.33325
+          height: 216
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        showDebug: 0
+        detectRefreshRate: 8
+        origin: {x: 0, y: 0, z: 0, w: 0}
+        radius: 1
+        relative: 1
+        layerMask: -1
+        includeChildren: 0
+        didOverlap: 0
+        overlapObjectCount: 0
+    - rid: 5214929319776223337
+      type: {class: NLogicAnd, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 1699a620-b0af-4cc8-ba49-8b2adc8bd024
+        computeOrder: 36
+        position:
+          serializedVersion: 2
+          x: 1553.3334
+          y: 1898.0002
+          width: 116
+          height: 101.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        a: 0
+        b: 0
+        result: 0
+    - rid: 5214929319776223338
+      type: {class: NLogicNegate, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: bf91c82c-fcc0-4b53-86e6-727d1e1d1aae
+        computeOrder: 37
+        position:
+          serializedVersion: 2
+          x: 1787.3335
+          y: 1898.0002
+          width: 116
+          height: 77.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        a: 0
+        result: 0
+    - rid: 5214929319776223339
+      type: {class: NLogicXor, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 8e4beefa-18ff-4e67-9e8a-b1d47110d238
+        computeOrder: 38
+        position:
+          serializedVersion: 2
+          x: 1787.3335
+          y: 2072
+          width: 116
+          height: 101.33325
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        a: 0
+        b: 0
+        result: 0
+    - rid: 5214929319776223340
+      type: {class: NLogicOr, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 4ac6610c-c08a-40b7-bb44-6d32e624fc18
+        computeOrder: 39
+        position:
+          serializedVersion: 2
+          x: 1553.3334
+          y: 2072
+          width: 116
+          height: 101.33325
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        a: 0
+        b: 0
+        result: 0
+    - rid: 5214929319776223341
+      type: {class: NSingleMath, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: ec0eeaad-c39e-4816-b73c-d3b0c117cec2
+        computeOrder: 40
+        position:
+          serializedVersion: 2
+          x: 2109.3333
+          y: 100.16257
+          width: 193.3335
+          height: 98.00001
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        method: 0
+        a: 0
+        outputValue: 0
+    - rid: 5214929319776223342
+      type: {class: NMultiMath, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: f2edd1e5-7915-4c28-bdb4-70101ab40acb
+        computeOrder: 41
+        position:
+          serializedVersion: 2
+          x: 2382.0002
+          y: 100.16257
+          width: 193.33325
+          height: 122.00001
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        method: 0
+        a: 0
+        b: 0
+        outputValue: 0
+    - rid: 5214929319776223343
+      type: {class: NLerpFloat, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: afc1d9b4-97cb-45ac-b0f4-2dd955daaa22
+        computeOrder: 42
+        position:
+          serializedVersion: 2
+          x: 2666.6667
+          y: 100.16257
+          width: 152
+          height: 125.333336
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        a: 0
+        b: 1
+        delta: 0
+        outputValue: 0
+    - rid: 5214929319776223344
+      type: {class: NMapFloat, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 81251eaf-bffc-4507-a2d9-0bcfb64758e9
+        computeOrder: 43
+        position:
+          serializedVersion: 2
+          x: 2903.3335
+          y: 100.16257
+          width: 158.66675
+          height: 173.33334
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        inputValue: 0
+        fromMin: 0
+        fromMax: 1
+        toMin: 0
+        toMax: 1
+        outputValue: 0
+    - rid: 5214929319776223345
+      type: {class: NClampFloat, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 1867a752-1fde-48ab-8c67-256c6aa63cd7
+        computeOrder: 44
+        position:
+          serializedVersion: 2
+          x: 3137.3333
+          y: 100.16257
+          width: 162.66675
+          height: 162.66669
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        inputValue: 0
+        useMin: 1
+        min: 0
+        useMax: 1
+        max: 1
+        outputValue: 0
+    - rid: 5214929319776223346
+      type: {class: NTrigonometry, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: ce1557ef-5f44-4763-8694-e055d446c9bf
+        computeOrder: 45
+        position:
+          serializedVersion: 2
+          x: 3367.3333
+          y: 100.16257
+          width: 193.3335
+          height: 116.666664
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        method: 0
+        isDegrees: 0
+        a: 0
+        outputValue: 0
+    - rid: 5214929319776223347
+      type: {class: NRandomFloat, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 225f2b88-9dbb-4e61-af54-aca9508d7f07
+        computeOrder: 46
+        position:
+          serializedVersion: 2
+          x: 3625.3335
+          y: 100.16257
+          width: 173.3335
+          height: 101.333336
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        min: 0
+        max: 1
+        outputValue: 0
+    - rid: 5214929319776223348
+      type: {class: NVectorMath, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 4b409343-1334-4c53-a6fc-79998e24e663
+        computeOrder: 47
+        position:
+          serializedVersion: 2
+          x: 2272.6667
+          y: 324.1626
+          width: 193.33325
+          height: 122
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        method: 0
+        a: {x: 0, y: 0, z: 0, w: 0}
+        b: {x: 0, y: 0, z: 0, w: 0}
+        outputVector: {x: 0, y: 0, z: 0, w: 0}
+    - rid: 5214929319776223349
+      type: {class: NLerpVector, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: a848f48f-0996-462e-bee3-6d975edb414d
+        computeOrder: 48
+        position:
+          serializedVersion: 2
+          x: 2641.3335
+          y: 324.1626
+          width: 162
+          height: 125.33334
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        a: {x: 0, y: 0, z: 0, w: 0}
+        b: {x: 1, y: 1, z: 1, w: 1}
+        delta: 0
+        outputVector: {x: 0, y: 0, z: 0, w: 0}
+    - rid: 5214929319776223350
+      type: {class: NMapVector, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: a5f85776-f467-45c1-a977-04009011a71d
+        computeOrder: 49
+        position:
+          serializedVersion: 2
+          x: 2976.6667
+          y: 324.1626
+          width: 160.6665
+          height: 173.33334
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        inputValue: {x: 0, y: 0, z: 0, w: 0}
+        fromMin: {x: 0, y: 0, z: 0, w: 0}
+        fromMax: {x: 1, y: 1, z: 1, w: 1}
+        toMin: {x: 0, y: 0, z: 0, w: 0}
+        toMax: {x: 1, y: 1, z: 1, w: 1}
+        outputVector: {x: 0, y: 0, z: 0, w: 0}
+    - rid: 5214929319776223351
+      type: {class: NClampVector, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: fc0a1ac8-56a2-43ea-a5ee-2239ca45e712
+        computeOrder: 50
+        position:
+          serializedVersion: 2
+          x: 3311.3335
+          y: 324.1626
+          width: 172
+          height: 162.66666
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        vector: {x: 0, y: 0, z: 0, w: 0}
+        useMin: 1
+        min: {x: 0, y: 0, z: 0, w: 0}
+        useMax: 1
+        max: {x: 1, y: 1, z: 1, w: 1}
+        outputVector: {x: 0, y: 0, z: 0, w: 0}
+    - rid: 5214929319776223352
+      type: {class: NNoiseVector, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 4e058ccc-6fe0-46b3-bc71-21686addc5ef
+        computeOrder: 51
+        position:
+          serializedVersion: 2
+          x: 3657.3335
+          y: 306.82925
+          width: 168.66675
+          height: 101.33331
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        positionX: {x: 0, y: 0, z: 0, w: 0}
+        positionY: {x: 0, y: 0, z: 0, w: 0}
+        outputValue: {x: 0, y: 0, z: 0, w: 0}
+    - rid: 5214929319776223353
+      type: {class: NRadianToDegree, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 90b37481-9845-4a4b-b4f9-b7b99eec09db
+        computeOrder: 52
+        position:
+          serializedVersion: 2
+          x: 2109.3333
+          y: 507.4959
+          width: 220.66675
+          height: 96
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        isReverse: 0
+        inputValue: 0
+        outputValue: 0
+    - rid: 5214929319776223354
+      type: {class: NMathConstant, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: f41aa6c0-5383-49ea-9c18-a08882fa3e3e
+        computeOrder: 53
+        position:
+          serializedVersion: 2
+          x: 2370
+          y: 507.4959
+          width: 192.66675
+          height: 98
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        type: 0
+        outputValue: 0
+    - rid: 5214929319776223355
+      type: {class: NRandomVector, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 73b1dd13-67bb-408f-a581-3c9e95ad01ab
+        computeOrder: 54
+        position:
+          serializedVersion: 2
+          x: 3657.3335
+          y: 438.16257
+          width: 182.66675
+          height: 101.33334
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        min: {x: 0, y: 0, z: 0, w: 0}
+        max: {x: 1, y: 1, z: 1, w: 1}
+        outputValue: {x: 0, y: 0, z: 0, w: 0}
+    - rid: 5214929319776223356
+      type: {class: NVectorSplit, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: f3e8af46-ee2b-4a36-b722-c052b1ea250d
+        computeOrder: 55
+        position:
+          serializedVersion: 2
+          x: 2475.3333
+          y: 745.3333
+          width: 161.3335
+          height: 149.33337
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        inputValue: {x: 0, y: 0, z: 0, w: 0}
+        outputX: 0
+        outputY: 0
+        outputZ: 0
+        outputW: 0
+    - rid: 5214929319776223357
+      type: {class: NVectorCombine, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 4a919231-13f5-4bec-9c44-3dbef006d39f
+        computeOrder: 56
+        position:
+          serializedVersion: 2
+          x: 2109.3333
+          y: 745.3333
+          width: 186.66675
+          height: 149.33337
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        valueX: 0
+        valueY: 0
+        valueZ: 0
+        valueW: 0
+        outputValue: {x: 0, y: 0, z: 0, w: 0}
+    - rid: 5214929319776223358
+      type: {class: NStringSplit, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 4e52c5b7-9b3a-4e66-8d2c-5314fb870c1f
+        computeOrder: 57
+        position:
+          serializedVersion: 2
+          x: 2109.3333
+          y: 1031.6584
+          width: 193.3335
+          height: 122
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        separator: 
+        inputValue: 
+        resultIndex: 0
+        outputValue: 
+    - rid: 5214929319776223359
+      type: {class: NStringConcat, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 61767b17-313e-4a9e-914f-f677b6a45429
+        computeOrder: 58
+        position:
+          serializedVersion: 2
+          x: 2370
+          y: 1031.6584
+          width: 184.66675
+          height: 122
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        separator: 
+        a: 
+        b: 
+        outputValue: 
+    - rid: 5214929319776223360
+      type: {class: NFromJson, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: f5c34c07-2992-4ef5-9db9-3430f28ea526
+        computeOrder: 59
+        position:
+          serializedVersion: 2
+          x: 2109.3333
+          y: 1325.1417
+          width: 194.66675
+          height: 321.33337
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        intKey: INT
+        floatKey: FLOAT
+        boolKey: BOOL
+        stringKey: STRING
+        vectorKey: VECTOR
+        colorKey: COLOR
+        json: 
+        intValue: 0
+        floatValue: 0
+        boolValue: 0
+        stringValue: 
+        vectorValue: {x: 0, y: 0, z: 0, w: 0}
+        colorValue: {r: 1, g: 1, b: 1, a: 1}
+    - rid: 5214929319776223361
+      type: {class: NToJson, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 31b6e429-0722-4754-8f8b-17b48bea611f
+        computeOrder: 60
+        position:
+          serializedVersion: 2
+          x: 2481.3333
+          y: 1325.1417
+          width: 194.66675
+          height: 321.33337
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        intKey: INT
+        floatKey: FLOAT
+        boolKey: BOOL
+        stringKey: STRING
+        vectorKey: VECTOR
+        colorKey: COLOR
+        intValue: 8
+        floatValue: 3.14159
+        boolValue: 1
+        stringValue: helloworld
+        vectorValue: {x: 1, y: 2, z: 3, w: 4}
+        colorValue: {r: 0.98039216, g: 0.5019608, b: 0.1254902, a: 1}
+        outputValue: 
+    - rid: 5214929319776223362
+      type: {class: NRegularExMatch, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: c1f051f9-9492-480e-9daf-8736a23b168e
+        computeOrder: 61
+        position:
+          serializedVersion: 2
+          x: 2621.3335
+          y: 1031.6584
+          width: 194
+          height: 101.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        inputValue: 
+        pattern: 
+        outputValue: 0
+    - rid: 5214929319776223363
+      type: {class: NRegularEx, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: ee5a4b3d-0d7a-4b3e-8a14-4e6d41595ba8
+        computeOrder: 62
+        position:
+          serializedVersion: 2
+          x: 2880
+          y: 1031.6584
+          width: 203.33325
+          height: 146
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        method: 0
+        inputValue: 
+        pattern: 
+        replace: 
+        outputValue: 
+    - rid: 5214929319776223364
+      type: {class: NColorFlip, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 5e90c312-3eb3-476c-9ef4-362af35a677c
+        computeOrder: 63
+        position:
+          serializedVersion: 2
+          x: 3032.6667
+          y: 745.3333
+          width: 148.6665
+          height: 173.33337
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        inputValue: {r: 0, g: 0, b: 0, a: 1}
+        flipR: 0
+        flipG: 0
+        flipB: 0
+        flipA: 0
+        outputValue: {r: 0, g: 0, b: 0, a: 1}
+    - rid: 5214929319776223365
+      type: {class: NColorWrap, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 4e8581da-ab93-461f-8324-d3e6cf5219aa
+        computeOrder: 64
+        position:
+          serializedVersion: 2
+          x: 3259.3333
+          y: 745.3333
+          width: 193.3335
+          height: 160
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        r: 0
+        g: 1
+        b: 2
+        a: 3
+        inputValue: {r: 0, g: 0, b: 0, a: 1}
+        outputValue: {r: 0, g: 0, b: 0, a: 1}
+    - rid: 5214929336822399015
+      type: {class: NBranch, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: f6fcfcd2-4e21-4b30-8d1f-a81fe9fea7a5
+        computeOrder: 65
+        position:
+          serializedVersion: 2
+          x: 2280
+          y: 1896.3334
+          width: 127.33325
+          height: 125.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        isA: 1
+    - rid: 5214929336822399016
+      type: {class: NIfElse, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 33670150-dbc6-4f23-9ee1-5bf9a0b6708c
+        computeOrder: 66
+        position:
+          serializedVersion: 2
+          x: 2485.3333
+          y: 1896.3334
+          width: 182.66675
+          height: 101.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        isA: 1
+    - rid: 5214929336822399017
+      type: {class: StringParameter, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        guid: f65189f9-0271-4ab1-9226-4e46cbd68e8e
+        name: CustomParam
+        type: 
+        serializedValue:
+          serializedType: 
+          serializedName: 
+          serializedValue: 
+        input: 1
+        settings:
+          rid: 5214929336822399018
+        val: 
+    - rid: 5214929336822399018
+      type: {class: ExposedParameter/Settings, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        isHidden: 0
+        expanded: 0
+        guid: f65189f9-0271-4ab1-9226-4e46cbd68e8e
+    - rid: 5214929336822399021
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: e45a0d0a-5c90-4324-a400-d1a3caebb080
+        computeOrder: 68
+        position:
+          serializedVersion: 2
+          x: 701.3333
+          y: -118.58354
+          width: 170.66669
+          height: 53.333336
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: f65189f9-0271-4ab1-9226-4e46cbd68e8e
+        accessor: 0
+    - rid: 5214929336822399022
+      type: {class: ParameterNode, ns: GraphProcessor, asm: NodeGraphProcessor.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: 71cca7e8-084f-4f0c-a182-21279066f66f
+        computeOrder: 67
+        position:
+          serializedVersion: 2
+          x: 975.3333
+          y: -141.91687
+          width: 146.66669
+          height: 109.33333
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        parameterGUID: f65189f9-0271-4ab1-9226-4e46cbd68e8e
+        accessor: 1
+    - rid: 5214929336822399478
+      type: {class: NNodeOrder, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 4aebd775-ad72-4cdb-bcbe-fc6fdcb2cc5a
+        computeOrder: 69
+        position:
+          serializedVersion: 2
+          x: 2736.6667
+          y: 1896.3334
+          width: 174.6665
+          height: 101.333374
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        order: 0
+    - rid: 5214929336822399515
+      type: {class: NInState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 62ffb639-719b-41d0-82ea-6fbaef8de0ac
+        computeOrder: 70
+        position:
+          serializedVersion: 2
+          x: 2280
+          y: 2149
+          width: 187.33325
+          height: 98
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        state: Default
+    - rid: 5214929336822399516
+      type: {class: NNodeOrder, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 8daddf73-52f3-4f6a-bb9c-2cb47943c815
+        computeOrder: 71
+        position:
+          serializedVersion: 2
+          x: 2603.3333
+          y: 2149
+          width: 174.66675
+          height: 101.333496
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        order: -10
+    - rid: 5214929336822399517
+      type: {class: NEventInvoke, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 1466d0c8-c804-4856-877d-3c70b955cd5e
+        computeOrder: 72
+        position:
+          serializedVersion: 2
+          x: 2848.6667
+          y: 2149
+          width: 174.6665
+          height: 101.333496
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        message: ev1
+    - rid: 5214929336822399518
+      type: {class: NNodeOrder, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 8dcf77c1-2f8e-4c07-9136-e7524bd53e75
+        computeOrder: 73
+        position:
+          serializedVersion: 2
+          x: 2603.3333
+          y: 2274.3335
+          width: 174.66675
+          height: 101.33325
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        order: 0
+    - rid: 5214929336822399519
+      type: {class: NEventInvoke, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 46eb2336-eeea-4e7c-a151-0f6ec243f329
+        computeOrder: 74
+        position:
+          serializedVersion: 2
+          x: 2848.6667
+          y: 2274.3335
+          width: 174.6665
+          height: 101.33325
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        message: ev2
+    - rid: 5214929336822399520
+      type: {class: NNodeOrder, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 3e8b6cd7-44fc-4eac-9db4-c6d14d29e78c
+        computeOrder: 75
+        position:
+          serializedVersion: 2
+          x: 2603.3333
+          y: 2401.6667
+          width: 174.66675
+          height: 101.33325
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        order: 10
+    - rid: 5214929336822399521
+      type: {class: NEventInvoke, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 0836bb70-f743-4361-8576-9e30dc38890e
+        computeOrder: 76
+        position:
+          serializedVersion: 2
+          x: 2848.6667
+          y: 2401.6667
+          width: 174.6665
+          height: 101.33325
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        message: ev3
+    - rid: 5734645928371683690
+      type: {class: NInAnyState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 466d1b26-71a7-4a78-a5d6-99f369103c13
+        computeOrder: 77
+        position:
+          serializedVersion: 2
+          x: 1422.6666
+          y: 100.66666
+          width: 187.33337
+          height: 77.333336
+        expanded: 0
+        debug: 0
+        nodeLock: 0

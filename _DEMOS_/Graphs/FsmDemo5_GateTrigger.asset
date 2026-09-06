@@ -1,0 +1,223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31390c44c9f3a3d40b424bf6821999a2, type: 3}
+  m_Name: FsmDemo5_GateTrigger
+  m_EditorClassIdentifier: NodeGraphProcessor.Runtime::GraphProcessor.BaseGraph
+  nodes:
+  - rid: 5734645928371683705
+  - rid: 5734645928371683706
+  - rid: 5734645928371683707
+  - rid: 5734645928371683708
+  - rid: 5734645928371683709
+  - rid: 5734645928371683710
+  - rid: 5734645928371683711
+  - rid: 5734645928371683712
+  edges:
+  - GUID: 3995c5ca-2b57-40b1-a270-9d6d6c5bbc3c
+    owner: {fileID: 11400000}
+    inputNodeGUID: 813e999c-95b8-4631-813a-2a4bbdbe7510
+    outputNodeGUID: cd9060b8-e7a8-4a44-8869-9f7c94c9ce68
+    inputFieldName: executes
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 8193fc1f-fbcb-4b8c-bcb3-2944d8636a9e
+    owner: {fileID: 11400000}
+    inputNodeGUID: ff3312ed-b4ce-4a26-a646-477ec0911a47
+    outputNodeGUID: 25374b80-94ed-4840-b4e4-8023fe851328
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 08874d27-31ca-4ef5-af42-452298687e12
+    owner: {fileID: 11400000}
+    inputNodeGUID: ff3312ed-b4ce-4a26-a646-477ec0911a47
+    outputNodeGUID: c0c2a9f2-870d-4182-aea9-0b633fa1b0f1
+    inputFieldName: condition
+    outputFieldName: onTriggerEnter
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 4acda583-d97c-4d17-809d-783c7da10284
+    owner: {fileID: 11400000}
+    inputNodeGUID: e328034a-009f-4d3e-8539-ed0716685e30
+    outputNodeGUID: ff3312ed-b4ce-4a26-a646-477ec0911a47
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 764e91c2-9ff7-47a2-bd58-89026e561133
+    owner: {fileID: 11400000}
+    inputNodeGUID: 925be435-015a-454d-ac34-e532c5ee59db
+    outputNodeGUID: e328034a-009f-4d3e-8539-ed0716685e30
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 5d3202a4-56e9-469b-a148-4cf5dc38b82b
+    owner: {fileID: 11400000}
+    inputNodeGUID: dccdb965-86b3-4245-83b8-117f7c7946c7
+    outputNodeGUID: 925be435-015a-454d-ac34-e532c5ee59db
+    inputFieldName: executes
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements: []
+  exposedParameters: []
+  stickyNotes: []
+  showNodeRidLabel: 0
+  nodeInspectorReference: {fileID: 0}
+  position: {x: -554, y: -99.333336, z: 0}
+  scale: {x: 1.15, y: 1.15, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5734645928371683705
+      type: {class: NEntryState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: cd9060b8-e7a8-4a44-8869-9f7c94c9ce68
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: 894.6666
+          y: 346.66666
+          width: 157.99994
+          height: 77.33334
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+    - rid: 5734645928371683706
+      type: {class: NGoToState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 813e999c-95b8-4631-813a-2a4bbdbe7510
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 1253.3333
+          y: 346.66666
+          width: 159.33325
+          height: 101.33334
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        state: Idle
+    - rid: 5734645928371683707
+      type: {class: NInState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 25374b80-94ed-4840-b4e4-8023fe851328
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: 894.6667
+          y: 610.6666
+          width: 187.33331
+          height: 98
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        state: Idle
+    - rid: 5734645928371683708
+      type: {class: NPerformed, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: ff3312ed-b4ce-4a26-a646-477ec0911a47
+        computeOrder: 4
+        position:
+          serializedVersion: 2
+          x: 1412.6666
+          y: 610.6667
+          width: 176
+          height: 120
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        condition: 0
+        isAnd: 1
+    - rid: 5734645928371683709
+      type: {class: NTriggerProxyDetect, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: c0c2a9f2-870d-4182-aea9-0b633fa1b0f1
+        computeOrder: 3
+        position:
+          serializedVersion: 2
+          x: 1096.6682
+          y: 701.3167
+          width: 272.66675
+          height: 269.3333
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        proxyId: GateTrigger
+        passLayerMask: -1
+        onTriggerEnter: 0
+        onTriggerStay: 0
+        onTriggerExit: 0
+        onTriggerEnter2D: 0
+        onTriggerStay2D: 0
+        onTriggerExit2D: 0
+        enterObjectCount: 0
+        stayObjectCount: 0
+        exitObjectCount: 0
+    - rid: 5734645928371683710
+      type: {class: NEventInvoke, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: e328034a-009f-4d3e-8539-ed0716685e30
+        computeOrder: 5
+        position:
+          serializedVersion: 2
+          x: 1702
+          y: 610.6667
+          width: 174.66663
+          height: 101.33331
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        message: Triggered
+    - rid: 5734645928371683711
+      type: {class: NDebugLog, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: 925be435-015a-454d-ac34-e532c5ee59db
+        computeOrder: 6
+        position:
+          serializedVersion: 2
+          x: 1938.7827
+          y: 610.6667
+          width: 193.33337
+          height: 206
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        text: "\u8FDB\u5165"
+        logType: 3
+    - rid: 5734645928371683712
+      type: {class: NGoToState, ns: FSMGraph, asm: FSMGraph}
+      data:
+        nodeCustomName: 
+        GUID: dccdb965-86b3-4245-83b8-117f7c7946c7
+        computeOrder: 7
+        position:
+          serializedVersion: 2
+          x: 2215.2463
+          y: 610.6666
+          width: 159.33325
+          height: 101.33331
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        state: Idle
