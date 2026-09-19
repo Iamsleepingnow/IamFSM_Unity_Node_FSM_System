@@ -717,18 +717,23 @@ namespace FSMGraph
             _suppressStuckFromInAnyState = false;
             if (string.IsNullOrEmpty(stateName)) return;
 
-            // 查找与 stateName 匹配的 NInState 节点
-            var inStateNode = _ctx.GraphData.nodes.Find(n =>
-                n.TypeName == "NInState"
-                && n.Properties.TryGetValue("state", out var s)
-                && s.AsString() == stateName);
+            // 查找与 stateName 匹配的所有 NInState 节点。
+            // 允许同一状态挂多个 InState 节点：每个 InState 的 exec 输出作为该状态的一条并行子链，
+            // 合并成"一个状态、多分支"并行执行（等价于单个 InState 下用 NBranch 直印成多分支）。
+            var inStateNodes = _ctx.GraphData.nodes
+                .Where(n =>
+                    n.TypeName == "NInState"
+                    && n.Properties.TryGetValue("state", out var s)
+                    && s.AsString() == stateName)
+                .ToList();
 
-            if (inStateNode == null) {
+            if (inStateNodes.Count == 0) {
                 if (debugLog)
                     Debug.LogError($"[FsmEngine] 未找到状态: {stateName}");
                 return;
             }
 
+            var inStateNode = inStateNodes[0];   // 代表节点：CurrentStateNode / InAnyState 失效判定的参照
             _ctx.CurrentStateName = stateName;
             _ctx.CurrentStateNode = inStateNode;
             _stateVersion++;            // 进入状态即开启新一轮状态语境
@@ -753,9 +758,14 @@ namespace FSMGraph
                     return;
             }
 
-            // 沿 NInState 的 exec 输出推进控制流。
+            // 沿所有同状态 NInState 的 exec 输出推进控制流（多个 InState 视为该状态的并行分支）。
             // NPerformed / NWaitSeconds / NWaitFrames 经 ExecuteControlFlow 自动转为并行阻塞监听。
-            if (inStateNode.Outputs.TryGetValue("executes", out var execPort)) {
+            foreach (var ist in inStateNodes) {
+                // 期间若 InAnyState 链已驱动了新的状态切换（CurrentStateNode 已被替换）→ 放弃后续分支
+                if (!ReferenceEquals(_ctx.CurrentStateNode, inStateNode))
+                    return;
+                if (!ist.Outputs.TryGetValue("executes", out var execPort))
+                    continue;
                 // 新状态体推进时清零"状态切换"标志：本状态内部的直通 Wait 是合法等待，
                 // 不该被"进入本状态"误判为失效。而外层平行批（同批兄弟）仍保留该标志，
                 // 使先于 Wait 执行的 GoToState 能据此把同批 Wait 判为失效并 breakLink。
