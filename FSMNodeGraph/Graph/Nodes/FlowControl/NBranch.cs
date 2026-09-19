@@ -5,7 +5,7 @@ using GraphProcessor;
 
 namespace FSMGraph
 {
-    [System.Serializable, NodeMenuItem("流程控制 Flow Control/Branch 分支")]
+    [System.Serializable, NodeMenuItem("流程控制 Flow Control/分支 Branch")]
     public class NBranch : BaseNode
     {
         [Input(name = "A")] public object a = null;
@@ -15,7 +15,7 @@ namespace FSMGraph
 
         [Output(name = "Result")] public object result = null;
         
-        public override string name => "Branch 分支";
+        public override string name => "分支 Branch";
         public override Color color => NodeMiscData.nodeThemeColor_FlowControl;
         public override bool isRenamable => true;
 
