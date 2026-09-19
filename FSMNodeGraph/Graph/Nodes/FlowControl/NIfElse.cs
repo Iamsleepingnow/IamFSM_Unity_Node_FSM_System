@@ -17,7 +17,7 @@ namespace FSMGraph
         [Output(name = "ExecutesA")] public ConditionalLink executesA;
         [Output(name = "ExecutesB")] public ConditionalLink executesB;
 
-        public override string name => "If Else 条件判断";
+        public override string name => "条件判断 If Else";
         public override Color color => NodeMiscData.nodeThemeColor_FlowControl;
         public override bool isRenamable => true;
 
