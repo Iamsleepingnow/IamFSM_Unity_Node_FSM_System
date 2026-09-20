@@ -37,6 +37,16 @@ namespace FSMGraph
         private int _dataRecursionDepth;
         private bool _dataOverflowLogged;
 
+        /// <summary>
+        /// 本次中止是否由步数限制保护（maxExecSteps / maxDataSteps）触发。
+        /// 由此导致的"失活"不再做失活处理（不重启/不停机），否则重启后会立刻再次撞上
+        /// 同一个死循环，使步数限制形同虚设。重新建立监听或显式 Start（Play/ReStart）时解除。
+        /// </summary>
+        private bool _stepLimitAborted;
+
+        /// <summary>步数限制抑制失活处理的日志是否已打印（避免每帧刷屏）</summary>
+        private bool _stepLimitSuppressLogged;
+
         // ==================== 调试可视化 ====================
 
         /// <summary>当前正在执行的节点 Rid（调试用）</summary>
@@ -248,6 +258,8 @@ namespace FSMGraph
             _expiredChain = false;             // 清除过期语境标记
             _stuckCount = 0;                     // 重置失活重试计数
             _stuckExhausted = false;
+            _stepLimitAborted = false;           // 显式启动：解除步数限制对失活处理的抑制
+            _stepLimitSuppressLogged = false;
             FollowExecOutput(entryNode);
             TryHandleStuck();                  // 启动推进结束即检测是否失活
         }
@@ -349,6 +361,14 @@ namespace FSMGraph
             if (_stuckHandling) return;
             if (_stuckExhausted) return;                          // 已达上限放弃 → 彻底静默
             if (_suppressStuckFromInAnyState) return;             // NInAnyState 链消耗耗尽，等下次状态切换重跑
+            if (_stepLimitAborted) {                               // 步数限制保护中止 → 不做失活处理，避免重启后重蹈死循环
+                if (debugLog && !_stepLimitSuppressLogged) {
+                    _stepLimitSuppressLogged = true;
+                    Debug.Log("[FsmEngine] 本次失活由步数限制保护引起，已抑制失活处理（不重启）；" +
+                              "待重新建立监听或显式 Play/ReStart 后恢复");
+                }
+                return;
+            }
             if (!_isRunning || _ctx == null) return;
             if (_blockers.Count > 0) return;                            // 仍有监听接续 → 未失活
             // DoNothing：不自动恢复
@@ -431,6 +451,8 @@ namespace FSMGraph
             else {
                 _stuckCount = 0;
                 _stuckExhausted = false;   // 重新建立监听，解除失活静默
+                _stepLimitAborted = false; // 重新建立监听，解除步数限制对失活处理的抑制
+                _stepLimitSuppressLogged = false;
             }
 
             // ---- 第1遍：条件阻塞 —— 任一满足即胜出，清空所有阻塞，沿胜出分支推进 ----
@@ -595,6 +617,7 @@ namespace FSMGraph
         private void ExecuteControlFlow(int nodeRid) {
             _execStepCount++;
             if (_execStepCount > maxExecStepsPerFrame) {
+                _stepLimitAborted = true;   // 标记本次中止由步数限制保护引起 → 禁止后续失活处理
                 Debug.LogError($"[FsmEngine] 同帧内执行步骤超过上限 {maxExecStepsPerFrame}，" +
                                "可能存在无限状态切换循环。已中止本帧执行。");
                 return;
@@ -788,6 +811,7 @@ namespace FSMGraph
             //    注意：这里不能用"帧内累计计数"，否则环烧光配额后整帧其他求值全被拦成 default，导致状态机停摆。
             _dataRecursionDepth++;
             if (_dataRecursionDepth > maxDataStepsPerFrame) {
+                _stepLimitAborted = true;   // 数据流循环同样视为步数限制触发 → 禁止后续失活处理
                 if (debugLog && !_dataOverflowLogged) {
                     _dataOverflowLogged = true;
                     Debug.LogError($"[FsmEngine] 数据求值递归深度超过上限 {maxDataStepsPerFrame}，" +
